@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover nail designs and services at Nail Pigment.">
+  <meta name="theme-color" content="#FFF5F7">
+
+  <title>Service Details | Nail Pigment</title>
+  <link rel="icon" type="image/png"
+      href="https://i.ibb.co/s9dHG7bf/Screenshot-2026-10-19-125458.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/service-details.css">
+  
+
+  <script src="js/site.js" defer></script>
+  <script src="js/service-details.js" defer></script>
+</head>
+
+<body data-page="service-details">
+
+  <div id="site-header"></div>
+
+  <main class="np-detail-page">
+    <section class="np-detail-hero">
+
+      <div class="np-detail-image-wrap">
+        <img
+          id="detail-image"
+          src="https://i.ibb.co/Pv7v0myz/Screenshot-2026-10-22-075809.png"
+          alt="Classic Gloss manicure"
+          loading="eager"
+        >
+
+        <span class="np-detail-image-label">
+          NAIL PIGMENT · THE LOOKBOOK
+        </span>
+      </div>
+
+      <div class="np-detail-content">
+
+        <a class="np-detail-back" href="services.html#service-lookbook">
+          ← Back to all looks
+        </a>
+
+        <span class="np-detail-eyebrow" id="detail-category">
+          NAIL INSPIRATION
+        </span>
+
+        <h1 id="detail-title">Discover your next look</h1>
+
+        <p id="detail-description"></p>
+
+        <div class="np-detail-divider"></div>
+
+        <h2>About this look</h2>
+        <p id="detail-about"></p>
+
+        <h2>Make it your own</h2>
+        <ul id="detail-features"></ul>
+
+        <p class="np-detail-note">
+          Final service options, suitability and pricing can be confirmed
+          with the studio before booking.
+        </p>
+
+        <div class="np-detail-actions">
+          <a id="detail-book" class="np-detail-primary" href="contact.html">
+            Book This Service <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="np-detail-secondary" href="services.html#service-lookbook">
+            Explore More Looks
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SERVICE IMAGE LIBRARY
+       All service image URLs are kept in HTML.
+       service-details.js should match data-service with the
+       service query parameter and read the corresponding img src.
+  -->
+
+  <div id="service-image-library" hidden>
+
+    <!-- 01. MANICURES -->
+
+    <img data-service="Classic Gloss"
+      src="https://i.ibb.co/Pv7v0myz/Screenshot-2026-10-22-075809.png"
+      alt="Classic glossy manicure">
+
+    <img data-service="Classic Refresh Mani"
+      src="https://i.ibb.co/mrHwfLyR/Screenshot-2026-10-16-100958.png"
+      alt="Classic manicure and nail shaping">
+
+    <img data-service="Soft Nude Finish"
+      src="https://i.ibb.co/xtnWZ14T/Screenshot-2026-10-22-111158.png"
+      alt="Soft nude manicure">
+
+    <img data-service="Basic Manicure"
+      src="https://i.ibb.co/V0JkTKHq/Screenshot-2026-10-22-114645.png" 
+      alt="Basic manicure service">
+
+    <img data-service="Gel Manicure"
+      src="https://i.ibb.co/Pv7v0myz/Screenshot-2026-10-22-075809.png"
+      alt="Glossy gel manicure">
+
+    <img data-service="Spa Manicure"
+      src="https://i.ibb.co/JjLdGx8c/Screenshot-2026-10-22-123038.png" 
+      alt="Spa manicure">
+
+    <img data-service="Paraffin Manicure"
+      src="https://i.ibb.co/XZpcGy2k/Screenshot-2026-10-22-123517.png" 
+      alt="Paraffin manicure">
+
+    <img data-service="French Manicure"
+      src="https://i.ibb.co/9dv3SR9/Screenshot-2026-10-22-124103.png" 
+      alt="French manicure">
+
+    <img data-service="Russian-Style Manicure"
+      src="https://i.ibb.co/XZcDF2L7/Screenshot-2026-10-22-124307.png"
+      alt="Russian-style manicure">
+
+    <!-- 02. NAIL EXTENSIONS -->
+
+    <img data-service="Soft Gel Full Set / Gel-X"
+      src="https://i.ibb.co/fVQvkMNq/Screenshot-2026-10-22-124510.png"
+      alt="Soft gel full set and Gel-X extensions">
+
+    <img data-service="Builder Gel / BIAB"
+      src="https://i.ibb.co/Mk8XmcST/Screenshot-2026-10-22-124633.png" 
+      alt="Builder gel and BIAB nails">
+
+    <img data-service="Hard Gel Extensions"
+      src="https://i.ibb.co/6Rnct7HG/Screenshot-2026-10-22-124857.png" 
+      alt="Hard gel extensions">
+
+    <img data-service="Polygel Extensions"
+      src="https://i.ibb.co/sJWnjwwc/Screenshot-2026-10-22-125043.png" 
+      alt="Polygel extensions">
+
+    <img data-service="Acrylic Extensions"
+      src="https://i.ibb.co/DHbNMmpB/Screenshot-2026-10-22-125213.png"
+      alt="Acrylic extensions">
+
+    <img data-service="Almond Extension Set"
+      src="https://i.ibb.co/4RfGgqqF/Screenshot-2026-10-22-125347.png" 
+      alt="Almond-shaped extensions">
+
+    <img data-service="Coffin Extension Set"
+      src="https://i.ibb.co/DH2zpXBH/Screenshot-2026-10-22-125508.png"
+      alt="Coffin-shaped extensions">
+
+    <img data-service="Nail Refills and Maintenance"
+      src="https://i.ibb.co/23pDHhfj/Screenshot-2026-10-22-125633.png" 
+      alt="Nail refills and maintenance">
+
+    <img data-service="Safe Removal Service"
+      src="https://i.ibb.co/21Z7pbqB/Screenshot-2026-10-22-125751.png" 
+      alt="Nail extension removal">
+
+    <!-- 03. NAIL ART -->
+
+    <img data-service="Creative Colour Story"
+      src="https://i.ibb.co/27yjFwXm/Screenshot-2026-10-22-125914.png" 
+      alt="Creative colourful nail art">
+
+    <img data-service="Minimal Lines"
+      src="https://i.ibb.co/84fCqD55/Screenshot-2026-10-22-130115.png" 
+      alt="Minimal line nail art">
+
+    <img data-service="Chrome &amp; Glazed"
+      src="https://i.ibb.co/qM5gPB33/Screenshot-2026-10-22-130300.png"
+      alt="Chrome and glazed nail art">
+
+    <img data-service="French Tips"
+      src="https://i.ibb.co/MxN4d1TF/Screenshot-2026-10-22-130454.png"
+      alt="French tip nail art">
+
+    <img data-service="Cat-Eye and Magnetic Effects"
+      src="https://i.ibb.co/9kkvDjD2/Screenshot-2026-10-22-130604.png" 
+      alt="Cat-eye magnetic nail effect">
+
+    <img data-service="Ombre and Aura Nails"
+      src="https://i.ibb.co/NgBGthwB/Screenshot-2026-10-22-130711.png" 
+      alt="Ombre and aura nail art">
+
+    <img data-service="Marble and Abstract Art"
+      src="https://i.ibb.co/m5H5rpQJ/Screenshot-2026-10-22-130835.png" 
+      alt="Marble and abstract nail art">
+
+    <img data-service="Seasonal and Occasion Nail Art"
+      src="https://i.ibb.co/N23PxD32/Screenshot-2026-10-22-131004.png" 
+      alt="Seasonal and occasion nail art">
+
+    <!-- 04. NAIL ART TIERS -->
+
+    <img data-service="Tier 1 - Minimalist Chic"
+      src="https://i.ibb.co/yFjBDZQS/Screenshot-2026-10-22-131236.png" 
+      alt="Minimalist chic nail art">
+
+  <img
+  data-service="Tier 2 - Trendy &amp; Bold"
+  src="https://i.ibb.co/fdqn0RjC/Screenshot-2026-10-22-131420.png" 
+  alt="Tier 2 Trendy and Bold nail art"
+>
+
+    <img data-service="Tier 3 - Intricate &amp; Statement"
+      src="https://i.ibb.co/39PsSd6q/Screenshot-2026-10-22-152039.png"
+      alt="Intricate statement nail art">
+
+    <img data-service="Tier 4 - Extreme &amp; Freestyle Art"
+      src="https://i.ibb.co/xSC9d9L4/Screenshot-2026-10-22-152243.png"
+      alt="Extreme freestyle nail art">
+
+    <!-- 05. NAIL CARE AND FINISHING -->
+
+    <img data-service="Nail Shaping and Filing"
+      src="https://i.ibb.co/pv9QxgZC/Screenshot-2026-10-22-152417.png" 
+      alt="Nail shaping and filing">
+
+    <img data-service="Cuticle Care"
+      src="https://i.ibb.co/PG1f1JLW/Screenshot-2026-10-22-152716.png" 
+      alt="Cuticle care">
+
+    <img data-service="Nail Repair"
+      src="https://i.ibb.co/Ndq6XCfG/Screenshot-2026-10-22-152921.png" 
+      alt="Nail repair">
+
+    <img data-service="Polish Removal"
+      src="https://i.ibb.co/gMBywDBS/Screenshot-2026-10-22-153048.png" 
+      alt="Polish removal">
+
+    <img data-service="Hand Care and Hydration"
+      src="https://i.ibb.co/nMbnL87p/Screenshot-2026-10-22-153202.png" 
+      alt="Hand care and hydration">
+
+    <img data-service="Nail Strengthening Treatment"
+      src="https://i.ibb.co/NgBHMntB/Screenshot-2026-10-22-153418.png" 
+      alt="Nail strengthening treatment">
+
+    <!-- PRESS-ON NAILS -->
+
+    <img data-service="Press On Nails"
+      src="https://i.ibb.co/HD8gk8bM/Screenshot-2026-10-20-151916.png"
+      alt="Press-on nail designs">
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

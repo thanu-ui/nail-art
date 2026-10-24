@@ -1,0 +1,782 @@
+
+/* NAIL PIGMENT — SERVICE DETAILS PAGE */
+
+body[data-page="service-details"] {
+  --detail-bg: #FFF5F7;
+  --detail-surface: #FFFFFF;
+  --detail-text: #70263F;
+  --detail-muted: #735967;
+  --detail-border: rgba(231, 84, 128, .23);
+  background: var(--detail-bg);
+}
+
+.np-detail-page {
+  min-height: 75vh;
+  padding: clamp(35px, 6vw, 85px) clamp(20px, 6vw, 90px);
+  background:
+    radial-gradient(circle at 5% 10%, rgba(231,84,128,.09), transparent 30%),
+    var(--detail-bg);
+}
+
+.np-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 75px);
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.np-detail-image-wrap {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  border: 1px solid var(--detail-border);
+  border-radius: 220px 220px 22px 22px;
+  background: var(--detail-surface);
+  box-shadow: 0 22px 60px rgba(112, 38, 63, .12);
+}
+
+.np-detail-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.np-detail-image-label {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 30px;
+  color: #70263F;
+  background: rgba(255,245,247,.92);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .12em;
+}
+
+.np-detail-content {
+  max-width: 620px;
+}
+
+.np-detail-back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--detail-muted);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.np-detail-back:hover {
+  color: #E75480;
+}
+
+.np-detail-eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: #E75480;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.np-detail-content h1 {
+  margin: 0 0 20px;
+  color: var(--detail-text);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.6rem, 4.4vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.np-detail-content h2 {
+  margin: 25px 0 10px;
+  color: var(--detail-text);
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.np-detail-content p,
+.np-detail-content li {
+  color: var(--detail-muted);
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.np-detail-divider {
+  height: 1px;
+  margin: 25px 0;
+  background: var(--detail-border);
+}
+
+.np-detail-content ul {
+  padding-left: 20px;
+}
+
+.np-detail-content li::marker {
+  color: #E75480;
+}
+
+.np-detail-note {
+  padding: 14px 16px;
+  border-left: 3px solid #E75480;
+  background: rgba(231,84,128,.08);
+  font-size: 11px !important;
+}
+
+.np-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.np-detail-primary,
+.np-detail-secondary {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 20px;
+  border: 1px solid #E75480;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.np-detail-primary {
+  color: #FFFFFF;
+  background: #E75480;
+}
+
+.np-detail-primary:hover {
+  background: #C83D6B;
+  border-color: #C83D6B;
+  transform: translateY(-2px);
+}
+
+.np-detail-secondary {
+  color: #C83D6B;
+  background: transparent;
+}
+
+.np-detail-secondary:hover {
+  color: #FFFFFF;
+  background: #C83D6B;
+}
+
+/* DARK MODE */
+
+html[data-theme="dark"] body[data-page="service-details"] {
+  --detail-bg: #191419;
+  --detail-surface: #251D26;
+  --detail-text: #FFF2F6;
+  --detail-muted: #D1BCC8;
+  --detail-border: rgba(255,143,176,.23);
+  background: var(--detail-bg);
+}
+
+html[data-theme="dark"] .np-detail-page {
+  background:
+    radial-gradient(circle at 5% 10%, rgba(231,84,128,.13), transparent 32%),
+    var(--detail-bg);
+}
+
+html[data-theme="dark"] .np-detail-image-wrap {
+  box-shadow: 0 22px 60px rgba(0,0,0,.32);
+}
+
+html[data-theme="dark"] .np-detail-image-label {
+  color: #FFF2F6;
+  background: rgba(37,29,38,.92);
+}
+
+html[data-theme="dark"] .np-detail-note {
+  background: rgba(231,84,128,.12);
+}
+
+html[data-theme="dark"] .np-detail-secondary {
+  color: #FF9FBD;
+}
+
+html[data-theme="dark"] .np-detail-secondary:hover {
+  color: #FFFFFF;
+}
+
+/* RTL */
+
+html[dir="rtl"] .np-detail-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .np-detail-content ul {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+html[dir="rtl"] .np-detail-note {
+  border-left: 0;
+  border-right: 3px solid #E75480;
+}
+
+@media (max-width: 850px) {
+  .np-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .np-detail-content {
+    max-width: none;
+  }
+
+  .np-detail-image-wrap,
+  .np-detail-image-wrap img {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 520px) {
+  .np-detail-page {
+    padding: 35px 18px;
+  }
+
+  .np-detail-image-wrap,
+  .np-detail-image-wrap img {
+    min-height: 320px;
+  }
+
+  .np-detail-actions {
+    flex-direction: column;
+  }
+
+  .np-detail-primary,
+  .np-detail-secondary {
+    width: 100%;
+  }
+}
+/* =========================================
+   SERVICE DETAILS — CATEGORY HIGHLIGHT BADGE
+========================================= */
+
+html body[data-page="service-details"] .np-detail-content #detail-category {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 18px !important;
+    margin: 18px 0 20px !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    background: #FFF8FA !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+/* Decorative lines */
+html body[data-page="service-details"] .np-detail-content #detail-category::before,
+html body[data-page="service-details"] .np-detail-content #detail-category::after {
+    content: "" !important;
+    display: block !important;
+    width: 27px !important;
+    height: 1px !important;
+    flex: 0 0 27px !important;
+    background: #F05A86 !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content #detail-category {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content #detail-category::before,
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content #detail-category::after {
+    background: #F5A5BD !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html body[data-page="service-details"] .np-detail-content #detail-category {
+        gap: 8px !important;
+        padding: 9px 12px !important;
+        font-size: 9px !important;
+        letter-spacing: 1.4px !important;
+    }
+
+    html body[data-page="service-details"] .np-detail-content #detail-category::before,
+    html body[data-page="service-details"] .np-detail-content #detail-category::after {
+        width: 18px !important;
+        flex-basis: 18px !important;
+    }
+}/* Back to All Looks — Highlighted Badge */
+html body[data-page="service-details"] .np-detail-content .np-detail-back {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 16px !important;
+    margin: 0 0 18px !important;
+
+    background: #FFF8FA !important;
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    overflow: visible !important;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease !important;
+}
+
+/* Berry-pink hover */
+html body[data-page="service-details"] .np-detail-content .np-detail-back:hover {
+    background: #C83D6B !important;
+    border-color: #C83D6B !important;
+    color: #FFFFFF !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content .np-detail-back {
+    background: #241820 !important;
+    color: #F5A5BD !important;
+    border-color: #C83D6B !important;
+}
+
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content .np-detail-back:hover {
+    background: #C83D6B !important;
+    color: #FFFFFF !important;
+}
+
+/* Mobile: prevent clipping */
+@media (max-width: 480px) {
+    html body[data-page="service-details"] .np-detail-content .np-detail-back {
+        font-size: 11px !important;
+        padding: 9px 13px !important;
+        margin-bottom: 16px !important;
+        white-space: normal !important;
+    }
+}/* Align Back link and Category badge */
+html body[data-page="service-details"] .np-detail-content .np-detail-back {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+
+    height: 44px !important;
+    min-height: 44px !important;
+    box-sizing: border-box !important;
+    padding: 0 17px !important;
+    margin: 0 8px 18px 0 !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+}
+
+/* Category badge */
+html body[data-page="service-details"] .np-detail-content #detail-category {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+
+    height: 44px !important;
+    min-height: 44px !important;
+    box-sizing: border-box !important;
+    padding: 0 20px !important;
+    margin: 0 0 18px 0 !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    line-height: 1 !important;
+}
+
+/* Consistent gap between decorative lines and category text */
+html body[data-page="service-details"] .np-detail-content #detail-category {
+    gap: 12px !important;
+}
+
+@media (max-width: 480px) {
+    html body[data-page="service-details"] .np-detail-content .np-detail-back {
+        height: 40px !important;
+        min-height: 40px !important;
+        padding-inline: 12px !important;
+        margin-right: 6px !important;
+        font-size: 11px !important;
+    }
+
+    html body[data-page="service-details"] .np-detail-content #detail-category {
+        height: 40px !important;
+        min-height: 40px !important;
+        padding-inline: 12px !important;
+        font-size: 10px !important;
+        gap: 7px !important;
+    }
+}/* Back to All Looks — Match Explore More Looks Button */
+html body[data-page="service-details"] .np-detail-content a.np-detail-back {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: fit-content !important;
+    height: auto !important;
+    min-height: 55px !important;
+    padding: 15px 23px !important;
+    margin: 0 0 18px !important;
+    box-sizing: border-box !important;
+
+    background: #FFFFFF !important;
+    color: #C83D6B !important;
+    border: 1px solid #FF8FB0 !important;
+    border-radius: 17px !important;
+
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+
+    transition: background-color 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease !important;
+}
+
+/* Berry-pink hover */
+html body[data-page="service-details"] .np-detail-content a.np-detail-back:hover {
+    background: #C83D6B !important;
+    color: #FFFFFF !important;
+    border-color: #C83D6B !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content a.np-detail-back {
+    background: #FFFFFF !important;
+    color: #C83D6B !important;
+    border-color: #FF8FB0 !important;
+}
+
+html[data-theme="dark"] body[data-page="service-details"] .np-detail-content a.np-detail-back:hover {
+    background: #C83D6B !important;
+    color: #FFFFFF !important;
+    border-color: #C83D6B !important;
+}/* Smaller Back to All Looks Button */
+html body[data-page="service-details"] .np-detail-content a.np-detail-back {
+    min-height: 42px !important;
+    padding: 10px 17px !important;
+    margin-bottom: 14px !important;
+
+    font-size: 12px !important;
+    border-radius: 13px !important;
+    gap: 6px !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html body[data-page="service-details"] .np-detail-content a.np-detail-back {
+        min-height: 38px !important;
+        padding: 8px 13px !important;
+        font-size: 11px !important;
+    }
+}/* Position Back to All Looks above the image */
+html body[data-page="service-details"] .np-detail-hero {
+    position: relative !important;
+}
+
+html body[data-page="service-details"] .np-detail-content .np-detail-back {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    z-index: 5 !important;
+}
+
+/* Reserve space for the button above the image */
+html body[data-page="service-details"] .np-detail-image-wrap {
+    margin-top: 58px !important;
+}
+
+/* Desktop layout */
+@media (min-width: 761px) {
+    html body[data-page="service-details"] .np-detail-hero {
+        align-items: start !important;
+    }
+}
+
+/* Mobile: keep button in normal flow */
+@media (max-width: 760px) {
+    html body[data-page="service-details"] .np-detail-content .np-detail-back {
+        position: static !important;
+        margin-bottom: 16px !important;
+    }
+
+    html body[data-page="service-details"] .np-detail-image-wrap {
+        margin-top: 0 !important;
+    }
+}
+/* =========================================
+   SERVICE DETAILS — BALANCED IMAGE & CONTENT
+========================================= */
+
+.np-detail-page {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: 60px clamp(20px, 6.5vw, 100px);
+  box-sizing: border-box;
+}
+
+.np-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(32px, 5vw, 84px);
+  width: 100%;
+  min-width: 0;
+}
+
+/* Image column */
+.np-detail-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 650px;
+  overflow: hidden;
+  border-radius: 30% 30% 22px 22px;
+  align-self: stretch;
+}
+
+.np-detail-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+/* Keep image label visible */
+.np-detail-image-label {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  z-index: 2;
+  max-width: calc(100% - 44px);
+}
+
+/* Text column */
+.np-detail-content {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  align-self: center;
+  overflow-wrap: anywhere;
+}
+
+.np-detail-content h1 {
+  max-width: 100%;
+  font-size: clamp(2.6rem, 4.4vw, 5rem);
+  line-height: 1.05;
+  overflow-wrap: normal;
+}
+
+.np-detail-content h2,
+.np-detail-content p,
+.np-detail-content ul {
+  max-width: 100%;
+}
+
+.np-detail-content p,
+.np-detail-content li {
+  line-height: 1.85;
+}
+
+.np-detail-content ul {
+  padding-inline-start: 22px;
+}
+
+.np-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.np-detail-actions a {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .np-detail-page {
+    padding: 42px 28px;
+  }
+
+  .np-detail-hero {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+  }
+
+  .np-detail-image-wrap,
+  .np-detail-image-wrap img {
+    min-height: 560px;
+  }
+
+  .np-detail-content h1 {
+    font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .np-detail-page {
+    padding: 28px 20px 44px;
+  }
+
+  .np-detail-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .np-detail-image-wrap {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 4.2;
+    border-radius: 150px 150px 20px 20px;
+  }
+
+  .np-detail-image-wrap img {
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 4.2;
+    object-fit: cover;
+  }
+
+  .np-detail-content {
+    width: 100%;
+  }
+
+  .np-detail-content h1 {
+    font-size: clamp(2.4rem, 9vw, 3.8rem);
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .np-detail-page {
+    padding-inline: 14px;
+  }
+
+  .np-detail-image-wrap {
+    border-radius: 100px 100px 16px 16px;
+  }
+
+  .np-detail-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .np-detail-actions a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* BACK TO ALL LOOKS — TEXT ONLY, PRESERVE ORIGINAL POSITION */
+
+html body[data-page="service-details"] .np-detail-content a.np-detail-back {
+    /* Keep original layout and spacing */
+
+    /* Remove button appearance only */
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    color: #C83D6B !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+
+    cursor: pointer !important;
+    transition: color 0.25s ease !important;
+}
+
+/* Light mode hover */
+html[data-theme="light"] body[data-page="service-details"]
+.np-detail-content a.np-detail-back:hover {
+    color: #9F2850 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+}
+
+/* Dark mode normal text */
+html[data-theme="dark"] body[data-page="service-details"]
+.np-detail-content a.np-detail-back {
+    color: #FF8FB0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Dark mode hover */
+html[data-theme="dark"] body[data-page="service-details"]
+.np-detail-content a.np-detail-back:hover {
+    color: #FFFFFF !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+}
