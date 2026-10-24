@@ -1,0 +1,5808 @@
+
+/* ==========================================
+   NAIL PIGMENT — OFFERS & PACKAGES
+   Primary:   #E75480
+   Secondary: #9E234E
+========================================== */
+
+:root {
+  --offers-rose: #E75480;
+  --offers-berry: #9E234E;
+}
+
+/* PAGE BASE */
+
+body[data-page="offers"] {
+  font-family: "Poppins", sans-serif;
+}
+
+body[data-page="offers"] main {
+  overflow: hidden;
+}
+
+body[data-page="offers"] img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+body[data-page="offers"] h1,
+body[data-page="offers"] h2,
+body[data-page="offers"] h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+body[data-page="offers"] a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.offers-hero,
+.offers-section,
+.seasonal-section,
+.referral-section,
+.offers-final-cta {
+  position: relative;
+}
+
+.offers-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(35px, 7vw, 100px);
+  padding: clamp(55px, 8vw, 110px) 8%;
+  background: var(--blush, #FFF5F7);
+  color: var(--ink, #263445);
+}
+
+.offers-hero-content {
+  max-width: 650px;
+}
+
+.offers-eyebrow {
+  display: inline-block;
+  color: var(--offers-berry);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  line-height: 1.8;
+}
+
+.offers-hero h1 {
+  margin: 20px 0;
+  font-size: clamp(42px, 5.5vw, 76px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.offers-hero h1 span,
+.offers-section-heading h2 span,
+.referral-content h2 span,
+.offers-final-cta h2 span {
+  color: var(--offers-rose);
+}
+
+.offers-hero-content > p,
+.offers-section-heading > p,
+.referral-content > p,
+.offers-final-cta-inner > p {
+  max-width: 570px;
+  color: var(--muted, #74717A);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.offers-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.offers-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 47px;
+  padding: 13px 23px;
+  border: 1px solid var(--offers-berry);
+  border-radius: 2px;
+  font-family: "Poppins", sans-serif;
+  
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.offers-btn:hover {
+  transform: translateY(-3px);
+}
+
+.offers-btn-primary {
+  background: var(--offers-rose);
+  color: #fff;
+  border-color: var(--offers-rose);
+}
+
+.offers-btn-primary:hover {
+  background: var(--offers-berry);
+  border-color: var(--offers-berry);
+  color: #fff;
+}
+
+.offers-btn-outline {
+  color: var(--offers-berry);
+  background: transparent;
+}
+
+.offers-btn-outline:hover {
+  background: var(--offers-berry);
+  color: #fff;
+}
+
+.offers-hero-note {
+  margin-top: 26px;
+  padding-left: 13px;
+  border-left: 2px solid var(--offers-rose);
+  color: var(--muted, #74717A);
+ 
+  line-height: 1.8;
+}
+
+.offers-hero-art {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  justify-self: end;
+}
+
+.offers-art-frame {
+  height: clamp(340px, 43vw, 540px);
+  overflow: hidden;
+  border-radius: 180px 180px 4px 4px;
+  border: 1px solid var(--offers-rose);
+  padding: 9px;
+}
+
+.offers-art-frame img {
+  height: 100%;
+  border-radius: inherit;
+  object-position: center;
+}
+
+.offers-art-label {
+  position: absolute;
+  right: -20px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 24px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--offers-berry);
+  box-shadow: 0 12px 35px rgb(158 35 78 / 10%);
+}
+
+.offers-art-label span {
+  color: var(--offers-berry);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.offers-art-label strong {
+  color: var(--ink, #263445);
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* SECTION HEADINGS */
+
+.offers-section,
+.seasonal-section {
+  padding: clamp(65px, 8vw, 105px) 8%;
+  background: var(--bg, #fff);
+  color: var(--ink, #263445);
+}
+
+.offers-section-heading {
+  max-width: 680px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.offers-section-heading h2,
+.offers-final-cta h2 {
+  margin: 13px 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.25;
+}
+
+.offers-section-heading > p {
+  margin: 0 auto;
+}
+
+
+/* SIGNATURE PACKAGE CARDS */
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.package-card {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, #F0DDE3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--offers-rose);
+  box-shadow: 0 18px 45px rgb(158 35 78 / 10%);
+}
+
+.package-card-featured {
+  border-color: var(--offers-rose);
+}
+
+.package-image {
+  position: relative;
+  height: 225px;
+  overflow: hidden;
+}
+
+.package-image img {
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.package-card:hover .package-image img {
+  transform: scale(1.05);
+}
+
+.package-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: var(--offers-berry);
+  color: #fff;
+  
+}
+
+.package-ribbon {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 9px 12px;
+  background: var(--offers-rose);
+  color: #fff;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.package-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: calc(100% - 225px);
+  padding: 25px 23px;
+}
+
+.package-category {
+  color: var(--offers-berry);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+}
+
+.package-content h3,
+.seasonal-card h3 {
+  margin: 12px 0;
+  color: var(--ink, #263445);
+  font-size: 25px;
+  line-height: 1.35;
+}
+
+.package-description,
+.seasonal-card > p {
+  color: var(--muted, #74717A);
+  
+  line-height: 1.9;
+}
+
+.package-list {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.package-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--ink, #263445);
+ 
+  line-height: 1.8;
+}
+
+.package-list li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--offers-rose);
+}
+
+.package-perk {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-top: auto;
+  padding: 16px;
+  background: var(--blush, #FFF5F7);
+  border-left: 2px solid var(--offers-rose);
+}
+
+.package-perk > span,
+.promo-code > span {
+  color: var(--offers-berry);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.package-perk strong {
+  color: var(--offers-berry);
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.package-perk small {
+  color: var(--muted, #74717A);
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.package-link,
+.loyalty-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  color: var(--offers-berry);
+ 
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.package-link span {
+  transition: transform 0.25s ease;
+}
+
+.package-link:hover span {
+  transform: translateX(5px);
+}
+
+
+/* SEASONAL OFFERS */
+
+.seasonal-section {
+  background: var(--blush, #FFF5F7);
+}
+
+.seasonal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.seasonal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 30px 26px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, #F0DDE3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seasonal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgb(158 35 78 / 9%);
+}
+
+.seasonal-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 22px;
+  border: 1px solid var(--offers-berry);
+  border-radius: 50%;
+  color: var(--offers-berry);
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+}
+
+.seasonal-card h3 {
+  font-size: 23px;
+}
+
+.offer-highlight {
+  margin: 14px 0;
+  color: var(--offers-rose);
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.promo-code {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 8px 0 12px;
+  padding: 12px;
+  background: var(--blush, #FFF5F7);
+  border: 1px dashed var(--offers-rose);
+}
+
+.promo-code > span {
+  flex-basis: 100%;
+}
+
+.promo-code strong {
+  flex: 1;
+  color: var(--offers-berry);
+ 
+  letter-spacing: 1px;
+}
+
+.copy-code-btn {
+  padding: 7px 9px;
+  border: 1px solid var(--offers-berry);
+  background: transparent;
+  color: var(--offers-berry);
+  font-family: inherit;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.copy-code-btn:hover {
+  background: var(--offers-berry);
+  color: #fff;
+}
+
+.offer-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0 15px;
+  color: var(--ink, #263445);
+ 
+  line-height: 1.8;
+}
+
+.offer-detail span {
+  color: var(--muted, #74717A);
+  font-size: 9px;
+}
+
+.seasonal-card .package-link {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.offers-disclaimer {
+  max-width: 850px;
+  margin: 28px auto 0;
+  color: var(--muted, #74717A);
+  
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+/* DEEP BERRY REFERRAL BANNER */
+
+.referral-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 30px;
+  padding: clamp(55px, 7vw, 85px) 10%;
+  overflow: hidden;
+  background: var(--offers-berry);
+  color: #fff;
+}
+
+.referral-content {
+  position: relative;
+  z-index: 1;
+}
+
+.referral-content .offers-eyebrow {
+  color: #F6C2D3;
+}
+
+.referral-content h2 {
+  margin: 17px 0;
+  font-size: clamp(34px, 4.5vw, 54px);
+  line-height: 1.2;
+}
+
+.referral-content h2 span {
+  color: #F6B4CB;
+}
+
+.referral-content > p {
+  color: #F6DDE6;
+}
+
+.referral-rewards {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.referral-reward {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.referral-reward > span {
+  color: #F6C2D3;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.referral-reward strong {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(21px, 2.6vw, 30px);
+}
+
+.referral-reward small {
+  color: #F6DDE6;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.referral-divider {
+  width: 1px;
+  background: rgb(255 255 255 / 35%);
+}
+
+.offers-btn-light {
+  background: #fff;
+  color: var(--offers-berry);
+  border-color: #fff;
+}
+
+.offers-btn-light:hover {
+  background: var(--offers-rose);
+  color: #fff;
+  border-color: var(--offers-rose);
+}
+
+.referral-decoration {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+}
+
+.referral-circle {
+  position: absolute;
+  display: block;
+  width: min(270px, 100%);
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 50%;
+}
+
+.referral-circle-two {
+  width: min(210px, 80%);
+  border-color: #F6B4CB;
+}
+
+.referral-monogram {
+  display: grid;
+  place-items: center;
+  width: 125px;
+  aspect-ratio: 1;
+  border: 1px solid #F6B4CB;
+  border-radius: 50%;
+  color: #F6B4CB;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+}
+
+
+/* VIP LOYALTY */
+
+.loyalty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.loyalty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line, #F0DDE3);
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.loyalty-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--offers-rose);
+}
+
+.loyalty-card-featured {
+  border-color: var(--offers-berry);
+  box-shadow: 0 14px 35px rgb(158 35 78 / 8%);
+}
+
+.loyalty-level {
+  color: var(--offers-berry);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.loyalty-emblem {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  margin: 20px 0;
+  border: 1px solid var(--offers-rose);
+  border-radius: 50%;
+  color: var(--offers-berry);
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+}
+
+.loyalty-card h3 {
+  margin: 0;
+  color: var(--ink, #263445);
+  font-size: 25px;
+}
+
+.loyalty-requirement {
+  margin: 10px 0;
+  color: var(--offers-rose);
+ 
+  font-weight: 600;
+}
+
+.loyalty-divider {
+  width: 45px;
+  height: 1px;
+  margin: 14px 0;
+  background: var(--offers-rose);
+}
+
+.loyalty-benefit {
+  min-height: 58px;
+  color: var(--muted, #74717A);
+ 
+  line-height: 1.9;
+}
+
+.loyalty-link {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+
+/* FINAL CTA */
+
+.offers-final-cta {
+  padding: clamp(65px, 8vw, 100px) 8%;
+  background: var(--blush, #FFF5F7);
+  border-top: 1px solid var(--line, #F0DDE3);
+  text-align: center;
+}
+
+.offers-final-cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.offers-final-cta-inner > p {
+  margin: 0 auto 28px;
+}
+
+.offers-final-cta-inner > small {
+  display: block;
+  margin-top: 18px;
+  color: var(--muted, #74717A);
+  font-size: 9px;
+}
+
+
+/* DARK MODE */
+
+html[data-theme="dark"] body[data-page="offers"] {
+  background: var(--bg, #17151A);
+  color: var(--ink, #F7EDF1);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-hero,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-section,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta {
+  background: var(--surface-soft, #211B21);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-section {
+  background: var(--bg, #17151A);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-card,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card {
+  background: var(--surface, #211B21);
+  border-color: var(--line, #44303B);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-card:hover,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card:hover,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card:hover {
+  border-color: var(--offers-rose);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-hero h1,
+html[data-theme="dark"] body[data-page="offers"] .offers-section-heading h2,
+html[data-theme="dark"] body[data-page="offers"] .package-content h3,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card h3,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card h3,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta h2 {
+  color: var(--ink, #F7EDF1);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-hero-content > p,
+html[data-theme="dark"] body[data-page="offers"] .offers-section-heading > p,
+html[data-theme="dark"] body[data-page="offers"] .package-description,
+html[data-theme="dark"] body[data-page="offers"] .package-list li,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card > p,
+html[data-theme="dark"] body[data-page="offers"] .offer-detail,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-benefit {
+  color: var(--muted, #D0C0C9);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-perk,
+html[data-theme="dark"] body[data-page="offers"] .promo-code {
+  background: var(--surface-soft, #2C2029);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-btn-outline {
+  color: #F6B4CB;
+  border-color: #F6B4CB;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-btn-outline:hover {
+  color: #fff;
+  background: var(--offers-berry);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-art-label {
+  background: var(--surface, #211B21);
+  border-color: var(--offers-rose);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-art-label strong {
+  color: var(--ink, #F7EDF1);
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-page="offers"] *,
+  body[data-page="offers"] *::before,
+  body[data-page="offers"] *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .offers-hero {
+    gap: 35px;
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .offers-section,
+  .seasonal-section {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .package-grid,
+  .seasonal-grid,
+  .loyalty-grid {
+    gap: 15px;
+  }
+
+  .package-content {
+    padding: 21px 17px;
+  }
+
+  .package-content h3 {
+    font-size: 22px;
+  }
+
+  .seasonal-card {
+    padding: 25px 19px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .offers-hero {
+    grid-template-columns: 1fr;
+    padding: 55px 6%;
+  }
+
+  .offers-hero-content {
+    max-width: 100%;
+  }
+
+  .offers-hero h1 {
+    font-size: clamp(42px, 10vw, 62px);
+  }
+
+  .offers-hero-art {
+    justify-self: center;
+    max-width: 440px;
+    margin-top: 10px;
+  }
+
+  .offers-art-frame {
+    height: 400px;
+  }
+
+  .offers-art-label {
+    right: -5px;
+  }
+
+  .package-grid,
+  .seasonal-grid,
+  .loyalty-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .referral-section {
+    grid-template-columns: 1fr;
+    padding: 55px 7%;
+  }
+
+  .referral-decoration {
+    min-height: 220px;
+  }
+
+  .referral-circle {
+    width: 215px;
+  }
+
+  .referral-circle-two {
+    width: 165px;
+  }
+}
+
+@media (max-width: 520px) {
+  .offers-hero {
+    padding: 42px 5%;
+  }
+
+  .offers-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .offers-btn {
+    width: 100%;
+  }
+
+  .offers-art-frame {
+    height: 320px;
+  }
+
+  .offers-art-label {
+    right: 0;
+    bottom: 18px;
+    padding: 14px 17px;
+  }
+
+  .offers-art-label strong {
+    font-size: 15px;
+  }
+
+  .offers-section,
+  .seasonal-section {
+    padding: 55px 5%;
+  }
+
+  .offers-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .offers-section-heading h2,
+  .offers-final-cta h2 {
+    font-size: 33px;
+  }
+
+  .package-grid,
+  .seasonal-grid,
+  .loyalty-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .package-image {
+    height: 245px;
+  }
+
+  .package-content {
+    height: auto;
+    min-height: 350px;
+    padding: 24px 22px;
+  }
+
+  .seasonal-card {
+    padding: 26px 23px;
+  }
+
+  .loyalty-card {
+    padding: 30px 24px;
+  }
+
+  .referral-section {
+    padding: 50px 6%;
+  }
+
+  .referral-rewards {
+    gap: 13px;
+  }
+
+  .referral-reward strong {
+    font-size: 22px;
+  }
+
+  .referral-reward small {
+    font-size: 8px;
+  }
+
+  .referral-content h2 {
+    font-size: 38px;
+  }
+
+  .referral-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .offers-hero h1 {
+    font-size: 38px;
+  }
+
+  .offers-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .referral-rewards {
+    flex-direction: column;
+  }
+
+  .referral-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .package-content h3,
+  .seasonal-card h3 {
+    font-size: 21px;
+  }
+}
+
+/* =========================================
+   OFFERS HERO — SPLIT-OPENING ANIMATION
+   ========================================= */
+
+.offers-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Keep the existing hero content behind the opening panels */
+.offers-hero-content,
+.offers-hero-art {
+  position: relative;
+  z-index: 1;
+}
+
+/* Two panels begin at the center */
+.offers-door {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    #9E234E 0%,
+    #E75480 55%,
+    #9E234E 100%
+  );
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(.77, 0, .18, 1);
+  animation-delay: 0.35s;
+  animation-fill-mode: forwards;
+}
+
+/* Left panel */
+.offers-door-left {
+  left: 0;
+  transform-origin: left center;
+  animation-name: offersDoorLeft;
+}
+
+/* Right panel */
+.offers-door-right {
+  right: 0;
+  transform-origin: right center;
+  animation-name: offersDoorRight;
+}
+
+/* Move panels away from the center */
+@keyframes offersDoorLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-101%);
+    visibility: hidden;
+  }
+}
+
+@keyframes offersDoorRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(101%);
+    visibility: hidden;
+  }
+}
+
+/* Reveal the hero content after the panels begin opening */
+.offers-hero-content {
+  animation: offersContentReveal 0.8s ease 0.9s both;
+}
+
+.offers-hero-art {
+  animation: offersArtReveal 1s ease 1s both;
+}
+
+@keyframes offersContentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes offersArtReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Respect reduced-motion accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  .offers-door {
+    display: none;
+    animation: none;
+  }
+
+  .offers-hero-content,
+  .offers-hero-art {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =========================================
+   NAIL PIGMENT — CURTAIN + SPLIT CARD HERO
+   ========================================= */
+
+.offers-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Intro animation covers the hero initially */
+.offers-opening {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Pink satin-style curtain panels */
+.offers-curtain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50.5%;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.10) 0,
+      rgba(255, 255, 255, 0.02) 12px,
+      rgba(90, 10, 40, 0.12) 24px,
+      rgba(255, 255, 255, 0.06) 36px
+    ),
+    linear-gradient(
+      135deg,
+      #9E234E 0%,
+      #E75480 45%,
+      #B72F60 75%,
+      #9E234E 100%
+    );
+  box-shadow: inset 0 0 35px rgba(75, 5, 30, 0.16);
+  animation-duration: 1.5s;
+  animation-delay: 2.1s;
+  animation-timing-function: cubic-bezier(.77, 0, .18, 1);
+  animation-fill-mode: forwards;
+}
+
+.offers-curtain-left {
+  left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  animation-name: offersCurtainLeft;
+}
+
+.offers-curtain-right {
+  right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  animation-name: offersCurtainRight;
+}
+
+@keyframes offersCurtainLeft {
+  to {
+    transform: translateX(-101%);
+    visibility: hidden;
+  }
+}
+
+@keyframes offersCurtainRight {
+  to {
+    transform: translateX(101%);
+    visibility: hidden;
+  }
+}
+
+/* Centered offer card */
+.offers-intro-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(420px, 82vw);
+  height: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #FFF5F7;
+  border: 1px solid #9E234E;
+  outline: 1px solid rgba(255, 255, 255, 0.75);
+  outline-offset: 5px;
+  box-shadow: 0 20px 65px rgba(50, 5, 25, 0.28);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: offerCardAppear 0.65s ease-out 0.45s both;
+}
+
+/* Each half opens away from the middle */
+.offer-card-half {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation-duration: 0.9s;
+  animation-delay: 2.0s;
+  animation-timing-function: cubic-bezier(.77, 0, .18, 1);
+  animation-fill-mode: forwards;
+}
+
+.offer-card-half-left {
+  transform-origin: left center;
+  border-right: 1px solid rgba(158, 35, 78, 0.25);
+  animation-name: offerCardLeft;
+}
+
+.offer-card-half-right {
+  padding: 18px 12px;
+  animation-name: offerCardRight;
+}
+
+.offer-card-half-left img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-card-number {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 4px 7px;
+  color: #FFFFFF;
+  background: rgba(100, 15, 45, 0.65);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.offer-card-eyebrow {
+  color: #9E234E;
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.offer-card-star {
+  margin: 15px 0 8px;
+  color: #E75480;
+  font-size: 24px;
+}
+
+.offer-card-half-right h2 {
+  margin: 0;
+  color: #9E234E;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(23px, 4vw, 31px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.offer-card-half-right h2 span {
+  display: block;
+  color: #E75480;
+}
+
+.offer-card-line {
+  width: 35px;
+  height: 1px;
+  margin: 12px 0;
+  background: #9E234E;
+}
+
+.offer-card-half-right p {
+  margin: 0;
+  color: #6F4051;
+  font-family: "Poppins", sans-serif;
+ 
+  line-height: 1.6;
+}
+
+/* Card halves separate from the center */
+@keyframes offerCardLeft {
+  to {
+    transform: translateX(-110%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes offerCardRight {
+  to {
+    transform: translateX(110%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Card enters before opening */
+@keyframes offerCardAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Reveal existing hero content */
+.offers-hero-content,
+.offers-hero-art {
+  animation: offersHeroReveal 0.85s ease 2.9s both;
+}
+
+@keyframes offersHeroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile card */
+@media (max-width: 480px) {
+  .offers-intro-card {
+    width: min(340px, 84vw);
+    height: 205px;
+  }
+
+  .offer-card-half-right {
+    padding: 12px 7px;
+  }
+
+  .offer-card-eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+
+  .offer-card-half-right p {
+    font-size: 9px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .offers-opening {
+    display: none;
+  }
+
+  .offers-hero-content,
+  .offers-hero-art {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Keep the intro card aligned with the curtains */
+.offers-opening {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Center card positioning */
+.offers-intro-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(420px, 82vw);
+  height: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  background: #FFF5F7;
+  border: 1px solid #9E234E;
+  outline: none;
+  box-shadow: 0 12px 35px rgba(50, 5, 25, 0.2);
+  transform: translate(-50%, -50%);
+  animation: offerCardDisappear 0.9s
+    cubic-bezier(.77, 0, .18, 1) 2.1s forwards;
+}
+
+/* Both halves must stay inside the card */
+.offer-card-half {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* Move the entire card away with the curtains */
+@keyframes offerCardDisappear {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scaleX(0);
+  }
+}
+
+/* Curtains open together */
+.offers-curtain-left {
+  left: 0;
+  animation: offersCurtainLeft 1.5s
+    cubic-bezier(.77, 0, .18, 1) 2.1s forwards;
+}
+
+.offers-curtain-right {
+  right: 0;
+  animation: offersCurtainRight 1.5s
+    cubic-bezier(.77, 0, .18, 1) 2.1s forwards;
+}
+
+/* Mobile sizing */
+@media (max-width: 480px) {
+  .offers-intro-card {
+    width: 84vw;
+    height: 205px;
+  }
+}
+
+/* OFFERS CTA — MATCH REFERENCE ALIGNMENT */
+
+body[data-page="offers"] .offers-final-cta {
+  width: calc(100% - 84px);
+  max-width: 1688px;
+  min-height: 318px;
+  margin: 42px auto;
+  padding: 48px 6%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  text-align: left;
+
+  background: linear-gradient(
+    110deg,
+    #C93C70 0%,
+    #E75480 52%,
+    #EF4F83 100%
+  );
+
+  box-shadow: 0 16px 40px rgba(158, 35, 78, 0.12);
+}
+
+/* Left-side content */
+body[data-page="offers"] .offers-final-cta-inner {
+  width: 65%;
+  max-width: 760px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+/* Eyebrow pill */
+body[data-page="offers"] .offers-final-cta .offers-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 12px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+
+  color: #fff;
+ 
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+body[data-page="offers"] .offers-final-cta .offers-eyebrow::before,
+body[data-page="offers"] .offers-final-cta .offers-eyebrow::after {
+  content: "";
+  width: 24px;
+  height: 1px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Heading */
+body[data-page="offers"] .offers-final-cta h2 {
+  margin: 14px 0 10px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+}
+
+body[data-page="offers"] .offers-final-cta h2 span {
+  color: #fff;
+}
+
+/* Description */
+body[data-page="offers"] .offers-final-cta-inner > p {
+  max-width: 570px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* Button positioned on the right */
+body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  z-index: 3;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  padding: 18px 32px;
+
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: #fff;
+  color: #E75480;
+
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 10px 28px rgba(90, 15, 42, 0.08);
+}
+
+body[data-page="offers"] .offers-final-cta .offers-btn-primary:hover {
+  background: #9E234E;
+  border-color: #9E234E;
+  color: #fff;
+  transform: translateY(calc(-50% - 2px));
+}
+
+/* Decorative sparkle between text and button */
+body[data-page="offers"] .offers-final-cta::after {
+  content: "✧";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 29%;
+  transform: translateY(-50%);
+
+  color: rgba(255, 255, 255, 0.22);
+  font-family: serif;
+  font-size: 150px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta {
+  background: linear-gradient(
+    110deg,
+    #70203F 0%,
+    #9E234E 52%,
+    #B83260 100%
+  );
+  border-color: rgba(231, 84, 128, 0.35);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta h2,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta h2 span {
+  color: #fff5f7;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  body[data-page="offers"] .offers-final-cta {
+    width: calc(100% - 40px);
+    min-height: 290px;
+    padding: 38px 5%;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    width: 62%;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    right: 5%;
+    padding: 16px 22px;
+    min-height: 56px;
+    
+  }
+
+  body[data-page="offers"] .offers-final-cta::after {
+    right: 28%;
+    font-size: 110px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  body[data-page="offers"] .offers-final-cta {
+    width: calc(100% - 28px);
+    min-height: 0;
+    margin: 30px auto;
+    padding: 32px 24px;
+    border-radius: 22px;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    width: 100%;
+  }
+
+  body[data-page="offers"] .offers-final-cta h2 {
+    font-size: clamp(34px, 8vw, 42px);
+    letter-spacing: -0.6px;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner > p {
+    font-size: 12px;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 22px;
+    min-height: 54px;
+    padding: 15px 22px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  body[data-page="offers"] .offers-final-cta::after {
+    top: 20px;
+    right: 18px;
+    transform: none;
+    font-size: 76px;
+  }
+}
+
+/* OFFERS CTA — ALIGN BUTTON TO THE RIGHT */
+
+body[data-page="offers"] .offers-final-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+body[data-page="offers"] .offers-final-cta-inner {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: 760px;
+  min-width: 0;
+}
+
+body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+  position: static;
+  flex: 0 0 auto;
+  align-self: center;
+  margin: 0 0 0 auto;
+  transform: none;
+  width: auto;
+  max-width: 310px;
+  min-height: 58px;
+  padding: 17px 28px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+
+body[data-page="offers"] .offers-final-cta .offers-btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Keep enough room for the heading */
+body[data-page="offers"] .offers-final-cta h2 {
+  max-width: 100%;
+  font-size: clamp(34px, 3.5vw, 52px);
+}
+
+/* Tablet and mobile */
+@media (max-width: 760px) {
+  body[data-page="offers"] .offers-final-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    width: 100%;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+
+/* =========================================
+   OFFERS PAGE — ONE CARD SECTION ONLY
+   Signature Packages keeps its cards.
+   Seasonal Offers + VIP Club become editorial.
+========================================= */
+
+/* ---------- SPECIAL OFFERS: EDITORIAL ROWS ---------- */
+
+body[data-page="offers"] .seasonal-grid {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body[data-page="offers"] .seasonal-card {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 28px;
+  align-items: start;
+  padding: 30px 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line, #F0DDE3);
+  box-shadow: none;
+  transform: none;
+  transition: padding-left 0.3s ease;
+}
+
+body[data-page="offers"] .seasonal-card:last-child {
+  border-bottom: 0;
+}
+
+body[data-page="offers"] .seasonal-card:hover {
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+  padding-left: 18px;
+}
+
+body[data-page="offers"] .seasonal-icon {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  width: 52px;
+  height: 52px;
+  margin: 4px 0 0;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+body[data-page="offers"] .seasonal-card > .package-category {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 5px;
+}
+
+body[data-page="offers"] .seasonal-card h3 {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 5px 0 8px;
+  font-size: clamp(23px, 2.5vw, 31px);
+}
+
+body[data-page="offers"] .seasonal-card > p {
+  grid-column: 2;
+  grid-row: 3;
+  max-width: 520px;
+  margin: 0;
+  font-size: 12px;
+}
+
+body[data-page="offers"] .seasonal-card .offer-highlight {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin: 0;
+  font-size: clamp(25px, 3vw, 38px);
+  white-space: nowrap;
+}
+
+body[data-page="offers"] .seasonal-card .promo-code,
+body[data-page="offers"] .seasonal-card .offer-detail {
+  grid-column: 2 / 4;
+  width: 100%;
+  margin-top: 18px;
+}
+
+body[data-page="offers"] .seasonal-card .package-link {
+  grid-column: 2 / 4;
+  grid-row: 4;
+  justify-self: start;
+  margin-top: 16px;
+  padding-top: 0;
+}
+
+/* Remove the old dark-card appearance */
+body[data-page="offers"] .seasonal-card-dark {
+  background: transparent;
+  color: var(--ink, #263445);
+}
+
+body[data-page="offers"] .seasonal-card-dark h3,
+body[data-page="offers"] .seasonal-card-dark > p {
+  color: var(--ink, #263445);
+}
+
+body[data-page="offers"] .seasonal-card-dark .offer-detail {
+  color: var(--ink, #263445);
+}
+
+body[data-page="offers"] .seasonal-card-dark .offer-detail span {
+  color: var(--muted, #74717A);
+}
+
+
+/* ---------- VIP CLUB: MEMBERSHIP TIMELINE ---------- */
+
+body[data-page="offers"] .loyalty-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 55px auto 0;
+}
+
+body[data-page="offers"] .loyalty-grid::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 16.5%;
+  right: 16.5%;
+  height: 1px;
+  background: var(--offers-rose);
+  opacity: 0.65;
+}
+
+body[data-page="offers"] .loyalty-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 18px 20px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+  transform: none;
+  transition: transform 0.3s ease;
+}
+
+body[data-page="offers"] .loyalty-card:hover {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: translateY(-5px);
+}
+
+body[data-page="offers"] .loyalty-card-featured {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+body[data-page="offers"] .loyalty-level {
+  margin-bottom: 17px;
+  letter-spacing: 2.5px;
+}
+
+body[data-page="offers"] .loyalty-emblem {
+  width: 72px;
+  height: 72px;
+  margin: 0 0 22px;
+  background: var(--bg, #fff);
+  border: 1px solid var(--offers-rose);
+  outline: 7px solid var(--bg, #fff);
+  font-size: 32px;
+}
+
+body[data-page="offers"] .loyalty-card h3 {
+  margin: 0;
+  font-size: clamp(22px, 2.2vw, 29px);
+}
+
+body[data-page="offers"] .loyalty-requirement {
+  margin: 12px 0;
+}
+
+body[data-page="offers"] .loyalty-divider {
+  width: 42px;
+  margin: 8px 0 14px;
+}
+
+body[data-page="offers"] .loyalty-benefit {
+  max-width: 260px;
+  min-height: 0;
+  margin: 0 0 20px;
+  
+  line-height: 1.9;
+}
+
+body[data-page="offers"] .loyalty-link {
+  margin-top: auto;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--offers-rose);
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+body[data-page="offers"] .loyalty-link:hover {
+  color: var(--offers-rose);
+  border-color: var(--offers-berry);
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card-dark,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card-featured {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card {
+  border-bottom-color: var(--line, #44303B);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card h3,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card-dark h3,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card-dark > p,
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card-dark .offer-detail,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card h3 {
+  color: var(--ink, #F7EDF1);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .loyalty-emblem {
+  background: var(--bg, #17151A);
+  outline-color: var(--bg, #17151A);
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 768px) {
+  body[data-page="offers"] .seasonal-card {
+    grid-template-columns: 55px minmax(0, 1fr);
+    column-gap: 18px;
+    padding: 25px 5px;
+  }
+
+  body[data-page="offers"] .seasonal-card .offer-highlight {
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: 14px;
+    font-size: 30px;
+  }
+
+  body[data-page="offers"] .seasonal-card .promo-code,
+  body[data-page="offers"] .seasonal-card .offer-detail,
+  body[data-page="offers"] .seasonal-card .package-link {
+    grid-column: 2;
+  }
+
+  body[data-page="offers"] .seasonal-card .promo-code {
+    grid-row: 5;
+  }
+
+  body[data-page="offers"] .seasonal-card .offer-detail {
+    grid-row: 5;
+  }
+
+  body[data-page="offers"] .seasonal-card .package-link {
+    grid-row: 6;
+  }
+
+  body[data-page="offers"] .loyalty-grid {
+    gap: 14px;
+  }
+
+  body[data-page="offers"] .loyalty-card {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 520px) {
+  body[data-page="offers"] .seasonal-card {
+    grid-template-columns: 42px minmax(0, 1fr);
+    column-gap: 13px;
+    padding: 24px 0;
+  }
+
+  body[data-page="offers"] .seasonal-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  body[data-page="offers"] .seasonal-card h3 {
+    font-size: 23px;
+  }
+
+ 
+
+  body[data-page="offers"] .seasonal-card .offer-highlight {
+    font-size: 27px;
+  }
+
+  body[data-page="offers"] .loyalty-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 35px;
+  }
+
+  body[data-page="offers"] .loyalty-grid::before {
+    top: 35px;
+    bottom: 35px;
+    left: 50%;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  body[data-page="offers"] .loyalty-card {
+    padding: 0 12px 8px;
+  }
+
+  body[data-page="offers"] .loyalty-emblem {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* ==========================================
+   NAIL PIGMENT — FEATURED MIDDLE PACKAGE
+========================================== */
+
+/* Three package cards */
+.packages-grid,
+.package-grid,
+.service-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+}
+
+/* Base card */
+.package-card,
+.service-package-card,
+.package-item {
+  position: relative;
+  min-width: 0;
+  overflow: visible;
+  border: 1px solid rgba(231, 84, 128, 0.20);
+  border-radius: 4px;
+  background: #FFFFFF;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Highlight the center card */
+.package-card:nth-child(2),
+.service-package-card:nth-child(2),
+.package-item:nth-child(2) {
+  z-index: 2;
+  transform: translateY(-12px);
+  border: 2px solid #E75480;
+  box-shadow:
+    0 0 0 5px rgba(231, 84, 128, 0.07),
+    0 18px 40px rgba(231, 84, 128, 0.18),
+    0 30px 65px rgba(120, 35, 65, 0.10);
+}
+
+/* Centered label above the middle card */
+.package-card:nth-child(2)::before,
+.service-package-card:nth-child(2)::before,
+.package-item:nth-child(2)::before {
+  content: "★  SPECIAL OCCASIONS";
+  position: absolute;
+  z-index: 5;
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: max-content;
+  max-width: calc(100% - 24px);
+  box-sizing: border-box;
+  padding: 12px 22px;
+
+  border: 1px solid #FF91B2;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #FF83A7, #E75480);
+
+  color: #FFFFFF;
+ 
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+  white-space: nowrap;
+
+  box-shadow: 0 8px 22px rgba(231, 84, 128, 0.30);
+}
+
+/* Small decorative line behind the badge */
+.package-card:nth-child(2)::after,
+.service-package-card:nth-child(2)::after,
+.package-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -14px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #E75480,
+    #FFB5CB,
+    #E75480,
+    transparent
+  );
+}
+
+/* Keep card content above its background */
+.package-card > *,
+.service-package-card > *,
+.package-item > * {
+  position: relative;
+}
+
+/* More emphasis on the middle package button */
+.package-card:nth-child(2) .package-button,
+.service-package-card:nth-child(2) .package-button,
+.package-item:nth-child(2) .package-button,
+.package-card:nth-child(2) a,
+.service-package-card:nth-child(2) a,
+.package-item:nth-child(2) a {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.package-card:nth-child(2) .package-button:hover,
+.service-package-card:nth-child(2) .package-button:hover,
+.package-item:nth-child(2) .package-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(231, 84, 128, 0.25);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .packages-grid,
+  .package-grid,
+  .service-packages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 38px;
+  }
+
+  .package-card:nth-child(2),
+  .service-package-card:nth-child(2),
+  .package-item:nth-child(2) {
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .packages-grid,
+  .package-grid,
+  .service-packages-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .package-card:nth-child(2),
+  .service-package-card:nth-child(2),
+  .package-item:nth-child(2) {
+    transform: none;
+    margin-top: 8px;
+  }
+
+  .package-card:nth-child(2)::before,
+  .service-package-card:nth-child(2)::before,
+  .package-item:nth-child(2)::before {
+    top: -20px;
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+}
+
+/* Dark mode */
+html[data-theme="dark"] .package-card,
+html[data-theme="dark"] .service-package-card,
+html[data-theme="dark"] .package-item {
+  background: var(--surface, #211820);
+  border-color: rgba(231, 84, 128, 0.28);
+}
+
+html[data-theme="dark"] .package-card:nth-child(2),
+html[data-theme="dark"] .service-package-card:nth-child(2),
+html[data-theme="dark"] .package-item:nth-child(2) {
+  border-color: #E75480;
+  box-shadow:
+    0 0 0 5px rgba(231, 84, 128, 0.09),
+    0 20px 45px rgba(231, 84, 128, 0.20);
+}
+
+/* OFFERS PAGE — REFERRAL EYEBROW LIGHT MODE COLOR FIX */
+html[data-theme="light"] body[data-page="offers"]
+.referral-content > .offers-eyebrow {
+    color: #9D2451 !important;
+    background: #FFF5F7 !important;
+    border-color: #9D2451 !important;
+}
+
+/* ==========================================
+   NAIL PIGMENT — OFFERS PAGE GLOW EFFECTS
+   Rose Pink + Blush + Soft Purple
+   Existing layout and images preserved
+========================================== */
+
+/* 1. Page background glow */
+html[data-theme="dark"] body[data-page="offers"] {
+  --offers-pink: #E75480;
+  --offers-blush: #FFF5F7;
+  --offers-purple: #A66CFF;
+
+  background:
+    radial-gradient(
+      ellipse at 5% 10%,
+      rgba(231, 84, 128, 0.17),
+      transparent 32%
+    ),
+    radial-gradient(
+      ellipse at 95% 48%,
+      rgba(166, 108, 255, 0.13),
+      transparent 34%
+    ),
+    #171219;
+}
+
+/* 2. Hero section */
+html[data-theme="dark"] body[data-page="offers"] .offers-hero {
+  background:
+    radial-gradient(
+      ellipse at 82% 42%,
+      rgba(231, 84, 128, 0.19),
+      transparent 43%
+    ),
+    transparent;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-hero-content h1 span,
+html[data-theme="dark"] body[data-page="offers"] .offers-section-heading h2 span,
+html[data-theme="dark"] body[data-page="offers"] .referral-content h2 span,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta h2 span {
+  color: #FF91BC;
+  text-shadow: 0 0 20px rgba(231, 84, 128, 0.28);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-eyebrow {
+  color: #FF91BC;
+}
+
+/* Hero image frame — preserve original photo */
+html[data-theme="dark"] body[data-page="offers"] .offers-art-frame {
+  border: 1px solid rgba(255, 145, 188, 0.32);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.28),
+    0 0 24px rgba(231, 84, 128, 0.22),
+    0 0 42px rgba(166, 108, 255, 0.10);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-art-label {
+  text-shadow: 0 0 14px rgba(231, 84, 128, 0.20);
+}
+
+/* 3. Curtain-opening offer card */
+html[data-theme="dark"] body[data-page="offers"] .offers-intro-card {
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.35),
+    0 0 25px rgba(231, 84, 128, 0.20);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offer-card-half-right {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(166, 108, 255, 0.15),
+      transparent 40%
+    ),
+    rgba(255, 245, 247, 0.04);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offer-card-star {
+  color: #FF91BC;
+  text-shadow:
+    0 0 10px rgba(231, 84, 128, 0.75),
+    0 0 22px rgba(166, 108, 255, 0.30);
+}
+
+/* 4. Signature package cards */
+html[data-theme="dark"] body[data-page="offers"] .package-card {
+  border: 1px solid rgba(231, 84, 128, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.20);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255, 145, 188, 0.78);
+  box-shadow:
+    0 17px 38px rgba(0, 0, 0, 0.30),
+    0 0 22px rgba(231, 84, 128, 0.25),
+    0 0 36px rgba(166, 108, 255, 0.12);
+}
+
+/* Featured package gets a stronger glow */
+html[data-theme="dark"] body[data-page="offers"] .package-card-featured {
+  border-color: rgba(255, 145, 188, 0.55);
+  box-shadow:
+    0 0 22px rgba(231, 84, 128, 0.13),
+    0 10px 28px rgba(0, 0, 0, 0.20);
+}
+
+/* Package image hover — images stay unchanged */
+html[data-theme="dark"] body[data-page="offers"] .package-image img {
+  transition: transform 0.45s ease;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-card:hover .package-image img {
+  transform: scale(1.035);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-number {
+  box-shadow: 0 0 14px rgba(231, 84, 128, 0.22);
+}
+
+/* Package savings/perks */
+html[data-theme="dark"] body[data-page="offers"] .package-perk {
+  border-color: rgba(231, 84, 128, 0.30);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(231, 84, 128, 0.12),
+      rgba(166, 108, 255, 0.07)
+    );
+}
+
+html[data-theme="dark"] body[data-page="offers"] .package-perk strong {
+  color: #FF91BC;
+  text-shadow: 0 0 12px rgba(231, 84, 128, 0.20);
+}
+
+/* 5. Seasonal offers */
+html[data-theme="dark"] body[data-page="offers"] .seasonal-section {
+  background:
+    radial-gradient(
+      circle at 5% 15%,
+      rgba(231, 84, 128, 0.11),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 95% 85%,
+      rgba(166, 108, 255, 0.10),
+      transparent 32%
+    ),
+    transparent;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card {
+  border: 1px solid rgba(231, 84, 128, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.17);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 145, 188, 0.75);
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.26),
+    0 0 22px rgba(231, 84, 128, 0.20);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .seasonal-icon {
+  color: #FF91BC;
+  text-shadow: 0 0 14px rgba(231, 84, 128, 0.38);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offer-highlight {
+  color: #FF91BC;
+  text-shadow:
+    0 0 12px rgba(231, 84, 128, 0.30),
+    0 0 24px rgba(166, 108, 255, 0.12);
+}
+
+/* Dark seasonal card keeps its existing design */
+html[data-theme="dark"] body[data-page="offers"] .seasonal-card-dark {
+  border-color: rgba(255, 145, 188, 0.38);
+  box-shadow: 0 0 22px rgba(231, 84, 128, 0.12);
+}
+
+/* Promo code box and copy button */
+html[data-theme="dark"] body[data-page="offers"] .promo-code {
+  border-color: rgba(231, 84, 128, 0.30);
+  background: rgba(231, 84, 128, 0.07);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .copy-code-btn:hover {
+  box-shadow: 0 0 16px rgba(231, 84, 128, 0.28);
+}
+
+/* 6. Referral section */
+html[data-theme="dark"] body[data-page="offers"] .referral-section {
+  border: 1px solid rgba(255, 145, 188, 0.30);
+  background:
+    radial-gradient(
+      circle at 15% 45%,
+      rgba(231, 84, 128, 0.24),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 90% 60%,
+      rgba(166, 108, 255, 0.18),
+      transparent 38%
+    ),
+    rgba(255, 245, 247, 0.035);
+  box-shadow: 0 0 30px rgba(231, 84, 128, 0.10);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .referral-reward {
+  border-color: rgba(255, 145, 188, 0.22);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .referral-reward strong {
+  color: #FF91BC;
+  text-shadow: 0 0 14px rgba(231, 84, 128, 0.25);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .referral-circle {
+  box-shadow:
+    0 0 25px rgba(231, 84, 128, 0.22),
+    inset 0 0 22px rgba(166, 108, 255, 0.10);
+}
+
+/* 7. VIP loyalty cards */
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card {
+  border: 1px solid rgba(231, 84, 128, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 145, 188, 0.75);
+  box-shadow:
+    0 15px 34px rgba(0, 0, 0, 0.27),
+    0 0 22px rgba(231, 84, 128, 0.21);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .loyalty-card-featured {
+  border-color: rgba(255, 145, 188, 0.55);
+  box-shadow: 0 0 22px rgba(231, 84, 128, 0.12);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .loyalty-emblem {
+  box-shadow:
+    0 0 16px rgba(231, 84, 128, 0.20),
+    0 0 28px rgba(166, 108, 255, 0.09);
+}
+
+html[data-theme="dark"] body[data-page="offers"] .loyalty-level {
+  color: #FF91BC;
+}
+
+/* 8. Final booking CTA */
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta {
+  border: 1px solid rgba(255, 145, 188, 0.32);
+  background:
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(231, 84, 128, 0.23),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 90% 50%,
+      rgba(166, 108, 255, 0.16),
+      transparent 38%
+    ),
+    rgba(255, 245, 247, 0.035);
+  box-shadow: 0 0 30px rgba(231, 84, 128, 0.10);
+}
+
+/* 9. All offer buttons glow on hover */
+html[data-theme="dark"] body[data-page="offers"] .offers-btn:hover,
+html[data-theme="dark"] body[data-page="offers"] .package-link:hover,
+html[data-theme="dark"] body[data-page="offers"] .loyalty-link:hover {
+  box-shadow:
+    0 0 15px rgba(231, 84, 128, 0.35),
+    0 0 28px rgba(166, 108, 255, 0.12);
+}
+
+/* 10. Keyboard accessibility */
+html[data-theme="dark"] body[data-page="offers"] a:focus-visible,
+html[data-theme="dark"] body[data-page="offers"] button:focus-visible {
+  outline: 2px solid #FF91BC;
+  outline-offset: 4px;
+}
+
+/* 11. Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="dark"] body[data-page="offers"] *,
+  html[data-theme="dark"] body[data-page="offers"] *::before,
+  html[data-theme="dark"] body[data-page="offers"] *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================
+   OFFERS PAGE — VIP CLUB MOBILE ALIGNMENT
+   ========================================= */
+
+@media (max-width: 520px) {
+  body[data-page="offers"] .loyalty-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  body[data-page="offers"] .loyalty-card,
+  body[data-page="offers"] .loyalty-card-featured {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    box-sizing: border-box;
+    padding: 28px 22px !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+  }
+
+  body[data-page="offers"] .loyalty-level {
+    position: static !important;
+    display: block;
+    margin: 0 0 14px;
+    line-height: 1.6;
+  }
+
+  body[data-page="offers"] .loyalty-emblem {
+    position: relative !important;
+    display: grid;
+    place-items: center;
+    flex: 0 0 65px;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px !important;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  body[data-page="offers"] .loyalty-card h3 {
+    width: 100%;
+    margin: 0 0 8px !important;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  body[data-page="offers"] .loyalty-requirement {
+    margin: 0 0 12px !important;
+    line-height: 1.6;
+  }
+
+  body[data-page="offers"] .loyalty-divider {
+    position: static !important;
+    width: 40px;
+    height: 1px;
+    flex: 0 0 1px;
+    margin: 10px auto 16px !important;
+  }
+
+  body[data-page="offers"] .loyalty-benefit {
+    width: 100%;
+    max-width: 300px;
+    min-height: 0 !important;
+    margin: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  body[data-page="offers"] .loyalty-link {
+    position: static !important;
+    display: inline-flex;
+    justify-content: center;
+    margin: 16px auto 0 !important;
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  /* Prevent decorative connector lines from crossing card content */
+  body[data-page="offers"] .loyalty-grid::before,
+  body[data-page="offers"] .loyalty-grid::after,
+  body[data-page="offers"] .loyalty-card::before,
+  body[data-page="offers"] .loyalty-card::after {
+    content: none !important;
+    display: none !important;
+  }
+}
+
+/* =========================================
+   OFFERS HERO — REDUCE THE MIDDLE GAP
+   ========================================= */
+
+body[data-page="offers"] .offers-hero {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr) !important;
+  column-gap: clamp(24px, 4vw, 58px) !important;
+  align-items: center;
+  padding: clamp(42px, 5.5vw, 76px) 8% !important;
+  min-height: 620px;
+  box-sizing: border-box;
+}
+
+body[data-page="offers"] .offers-hero-content {
+  width: 100%;
+  max-width: 690px;
+  min-width: 0;
+}
+
+body[data-page="offers"] .offers-hero h1 {
+  margin: 16px 0;
+  line-height: 1.08;
+}
+
+body[data-page="offers"] .offers-hero-content > p {
+  max-width: 590px;
+  margin-top: 0;
+}
+
+body[data-page="offers"] .offers-hero-art {
+  width: 100%;
+  max-width: 440px;
+  justify-self: center;
+  min-width: 0;
+}
+
+body[data-page="offers"] .offers-art-frame {
+  height: clamp(360px, 39vw, 500px);
+  box-shadow: 0 16px 40px rgba(158, 35, 78, 0.10);
+}
+
+body[data-page="offers"] .offers-art-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Light mode shadow */
+html[data-theme="light"] body[data-page="offers"] .offers-art-frame {
+  box-shadow:
+    0 18px 45px rgba(158, 35, 78, 0.12),
+    0 0 0 5px rgba(231, 84, 128, 0.035);
+}
+
+/* Dark mode: same image and alignment, darker shadow */
+html[data-theme="dark"] body[data-page="offers"] .offers-art-frame {
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.35),
+    0 0 24px rgba(231, 84, 128, 0.12);
+}
+
+body[data-page="offers"] .offers-art-label {
+  right: -12px;
+  bottom: 24px;
+  max-width: calc(100% - 16px);
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body[data-page="offers"] .offers-hero {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
+    column-gap: 28px !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    min-height: 560px;
+  }
+
+  body[data-page="offers"] .offers-hero-art {
+    max-width: 390px;
+  }
+
+  body[data-page="offers"] .offers-art-label {
+    right: -6px;
+  }
+}
+
+/* Mobile: stack content and image */
+@media (max-width: 768px) {
+  body[data-page="offers"] .offers-hero {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 34px !important;
+    min-height: auto;
+    padding: 48px 6% 58px !important;
+  }
+
+  body[data-page="offers"] .offers-hero-content {
+    max-width: 100%;
+  }
+
+  body[data-page="offers"] .offers-hero-art {
+    width: 100%;
+    max-width: 440px;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  body[data-page="offers"] .offers-art-frame {
+    height: clamp(320px, 72vw, 420px);
+  }
+
+  body[data-page="offers"] .offers-art-label {
+    right: 0;
+    bottom: 18px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 520px) {
+  body[data-page="offers"] .offers-hero {
+    padding: 38px 5% 46px !important;
+  }
+
+  body[data-page="offers"] .offers-hero h1 {
+    font-size: clamp(39px, 10vw, 52px);
+    letter-spacing: -1px;
+  }
+
+  body[data-page="offers"] .offers-art-frame {
+    height: 320px;
+  }
+}
+
+/* ==========================================================
+   NAIL PIGMENT — OFFERS PAGE
+   Rose Pink #E75480 | Blush White #FFF5F7
+========================================================== */
+
+.np-offers-design {
+  --od-pink: #E75480;
+  --od-blush: #FFF5F7;
+  --od-ink: #33242A;
+  --od-muted: #75656C;
+  --od-line: rgba(231, 84, 128, 0.23);
+  --od-page: #FFFFFF;
+  --od-card: #FFF9FA;
+  --od-dark: #2B1C23;
+
+  color: var(--od-ink);
+  font-family: "Poppins", sans-serif;
+  overflow: clip;
+}
+
+.np-offers-design *,
+.np-offers-design *::before,
+.np-offers-design *::after {
+  box-sizing: border-box;
+}
+
+.np-offers-design img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.np-offers-design a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.np-offers-design a:focus-visible {
+  outline: 2px solid var(--od-pink);
+  outline-offset: 4px;
+}
+
+.np-offers-design h2,
+.np-offers-design h3,
+.np-offers-design p {
+  margin-top: 0;
+}
+
+.np-offer-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.np-overline {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--od-pink);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
+.np-offer-button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 18px;
+  border: 1px solid var(--od-pink);
+  border-radius: 30px;
+  background: var(--od-pink);
+  color: #FFFFFF;
+
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.np-offer-button:hover {
+  background: #C83D68;
+  transform: translateY(-2px);
+}
+
+.np-offer-button span {
+  font-size: 14px;
+}
+
+/* ==========================================================
+   SECTION 1 — FESTIVE LOOKS
+========================================================== */
+
+.np-festive-block {
+  padding: clamp(30px, 4vw, 55px) clamp(20px, 5vw, 70px);
+  border-bottom: 1px solid var(--od-line);
+  background:
+    radial-gradient(ellipse at 0% 100%,
+      rgba(231, 84, 128, 0.1), transparent 55%),
+    var(--od-blush);
+}
+
+.np-festive-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 55px);
+}
+
+.np-festive-content {
+  min-width: 0;
+}
+
+.np-festive-content h2,
+.np-section-heading h2,
+.np-group-content h2 {
+  margin-bottom: 12px;
+  color: var(--od-ink);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(29px, 3.5vw, 44px);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.np-festive-content h2 em,
+.np-section-heading h2 em,
+.np-group-content h2 em {
+  color: var(--od-pink);
+  font-weight: 500;
+}
+
+.np-festive-content > p,
+.np-section-heading > p,
+.np-group-content > p {
+  max-width: 430px;
+  margin-bottom: 17px;
+  color: var(--od-muted);
+ 
+  line-height: 1.85;
+}
+
+.np-festive-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 18px 0;
+}
+
+.np-festive-pills a {
+  padding: 7px 10px;
+  border: 1px solid var(--od-line);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--od-ink);
+  font-size: 9px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.np-festive-pills a:hover {
+  background: var(--od-pink);
+  color: #FFFFFF;
+}
+
+.np-festive-deal-banner {
+  display: flex;
+  width: 100%;
+  max-width: 340px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 6px 0 20px;
+  padding: 16px 19px;
+  border: 1px dashed var(--od-pink);
+  border-radius: 8px;
+  background: rgba(231, 84, 128, 0.07);
+}
+
+.np-festive-deal-banner > span {
+  color: var(--od-muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.np-festive-deal-banner > strong {
+  color: var(--od-pink);
+  font-family: "Playfair Display", serif;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.np-festive-deal-banner > small {
+  color: var(--od-muted);
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.np-festive-gallery {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.np-festive-tile {
+  position: relative;
+  display: block;
+  min-width: 0;
+  aspect-ratio: 1 / 1.12;
+  overflow: hidden;
+  border: 1px solid var(--od-line);
+  border-radius: 7px;
+  background: #E7C1CC;
+  text-decoration: none;
+}
+
+.np-festive-tile img {
+  transition: transform 0.5s ease;
+}
+
+.np-festive-tile:hover img {
+  transform: scale(1.07);
+}
+
+.np-festive-tile::after {
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgba(38, 17, 27, 0.8));
+  content: "";
+}
+
+.np-festive-tile > span {
+  position: absolute;
+  z-index: 1;
+  right: 6px;
+  bottom: 9px;
+  left: 6px;
+  color: #FFFFFF;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ==========================================================
+   SECTION 2 — SPECIAL OFFERS
+========================================================== */
+
+.np-special-block {
+  padding: clamp(32px, 4vw, 54px) clamp(20px, 5vw, 70px);
+  border-bottom: 1px solid var(--od-line);
+  background: var(--od-page);
+}
+
+.np-section-heading {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.np-section-heading h2 {
+  font-size: clamp(29px, 3.2vw, 41px);
+}
+
+.np-section-heading > p {
+  margin-inline: auto;
+}
+
+.np-deals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.np-deal {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 21px 17px;
+  border: 1px solid var(--od-line);
+  border-radius: 8px;
+  background: var(--od-card);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.np-deal:hover {
+  border-color: var(--od-pink);
+  transform: translateY(-3px);
+}
+
+.np-deal-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 15px;
+  border: 1px solid var(--od-line);
+  border-radius: 50%;
+  color: var(--od-pink);
+  font-size: 22px;
+}
+
+.np-deal-label {
+  margin-bottom: 8px;
+  color: var(--od-pink);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.np-deal h3 {
+  margin-bottom: 9px;
+  color: var(--od-ink);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(17px, 1.6vw, 21px);
+  font-weight: 500;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.np-deal > p {
+  flex: 1;
+  margin-bottom: 17px;
+  color: var(--od-muted);
+
+  line-height: 1.8;
+}
+
+.np-deal > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--od-pink);
+  color: var(--od-pink);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.np-deal-featured {
+  background: var(--od-blush);
+}
+
+.np-offer-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--od-line);
+}
+
+.np-offer-note > span {
+  color: var(--od-pink);
+  font-size: 18px;
+}
+
+.np-offer-note > p {
+  flex: 1;
+  margin: 0;
+  color: var(--od-muted);
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.np-offer-note > a {
+  color: var(--od-pink);
+  font-size: 9px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ==========================================================
+   SECTION 3 — GROUP COLLABORATIONS
+========================================================== */
+
+.np-group-block {
+  padding: clamp(32px, 4vw, 55px) clamp(20px, 5vw, 70px);
+  background:
+    radial-gradient(ellipse at 90% 0%,
+      rgba(231, 84, 128, 0.1), transparent 45%),
+    var(--od-dark);
+}
+
+.np-group-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 55px);
+}
+
+.np-group-photo {
+  position: relative;
+  min-width: 0;
+  min-height: 385px;
+  overflow: hidden;
+  background: #704252;
+}
+
+.np-group-photo > img {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.6s ease;
+}
+
+.np-group-photo:hover > img {
+  transform: scale(1.05);
+}
+
+.np-group-photo::after {
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgba(30, 12, 21, 0.82));
+  content: "";
+}
+
+.np-group-photo-caption {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #FFFFFF;
+}
+
+.np-group-photo-caption > span {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+
+.np-group-photo-caption > strong {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(23px, 2.5vw, 34px);
+  font-weight: 500;
+}
+
+.np-group-seal {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  width: 77px;
+  height: 77px;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--od-blush);
+  color: var(--od-pink);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.np-group-content {
+  min-width: 0;
+}
+
+.np-group-content .np-overline {
+  color: #F3A1B8;
+}
+
+.np-group-content h2 {
+  color: #FFF5F7;
+}
+
+.np-group-content > p {
+  color: #DDCBD2;
+}
+
+.np-group-deal-banner {
+  margin: 22px 0;
+  padding: 20px;
+  border: 1px solid rgba(243, 161, 184, 0.4);
+  background: rgba(231, 84, 128, 0.09);
+}
+
+.np-group-deal-tag {
+  display: block;
+  margin-bottom: 9px;
+  color: #F3A1B8;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  line-height: 1.7;
+}
+
+.np-group-deal-banner h3 {
+  margin-bottom: 9px;
+  color: #FFF5F7;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.np-group-deal-banner h3 em {
+  color: #F3A1B8;
+}
+
+.np-group-deal-banner p {
+  margin-bottom: 15px;
+  color: #DDCBD2;
+  
+  line-height: 1.8;
+}
+
+.np-group-list {
+  margin: 22px 0;
+  border-top: 1px solid rgba(255, 245, 247, 0.17);
+}
+
+.np-group-list article {
+  display: grid;
+  grid-template-columns: 29px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 245, 247, 0.17);
+}
+
+.np-group-number {
+  color: #F3A1B8;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+}
+
+.np-group-list h3 {
+  margin-bottom: 5px;
+  color: #FFF5F7;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.np-group-list p {
+  margin-bottom: 0;
+  color: #DDCBD2;
+ 
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   DARK MODE
+========================================================== */
+
+html[data-theme="dark"] .np-offers-design {
+  --od-ink: #FFF5F7;
+  --od-muted: #D7C4CD;
+  --od-line: rgba(231, 84, 128, 0.28);
+  --od-page: #191519;
+  --od-card: #241B21;
+  --od-blush: #261D23;
+  --od-dark: #100D10;
+}
+
+html[data-theme="dark"] .np-festive-block,
+html[data-theme="dark"] .np-group-block {
+  background-color: var(--od-dark);
+}
+
+html[data-theme="dark"] .np-special-block {
+  background: var(--od-page);
+}
+
+html[data-theme="dark"] .np-deal {
+  background: var(--od-card);
+}
+
+html[data-theme="dark"] .np-deal-featured {
+  background: #30202A;
+}
+
+html[data-theme="dark"] .np-festive-deal-banner {
+  background: rgba(231, 84, 128, 0.09);
+}
+
+html[data-theme="dark"] .np-group-deal-banner {
+  background: rgba(231, 84, 128, 0.08);
+}
+
+html[data-theme="dark"] .np-festive-pills a {
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--od-ink);
+}
+
+/* ==========================================================
+   RTL
+========================================================== */
+
+html[dir="rtl"] .np-offers-design {
+  direction: rtl;
+}
+
+html[dir="rtl"] .np-group-photo-caption {
+  text-align: right;
+}
+
+html[dir="rtl"] .np-group-seal {
+  right: auto;
+  left: 16px;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 950px) {
+  .np-festive-grid,
+  .np-group-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .np-festive-content {
+    max-width: 650px;
+  }
+
+  .np-festive-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .np-festive-tile {
+    aspect-ratio: 1 / 0.95;
+  }
+
+  .np-deals-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .np-group-photo {
+    min-height: 350px;
+  }
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+  .np-festive-block,
+  .np-special-block,
+  .np-group-block {
+    padding: 30px 16px;
+  }
+
+  .np-festive-content h2,
+  .np-section-heading h2,
+  .np-group-content h2 {
+    font-size: clamp(30px, 8.5vw, 39px);
+  }
+
+  .np-festive-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .np-festive-tile {
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .np-festive-tile > span {
+    font-size: 8px;
+  }
+
+  .np-deals-grid {
+    gap: 10px;
+  }
+
+  .np-deal {
+    padding: 16px 13px;
+  }
+
+  .np-deal-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
+  }
+
+  .np-deal h3 {
+    font-size: 18px;
+  }
+
+  .np-offer-note {
+    align-items: flex-start;
+  }
+
+  .np-offer-note > p {
+    flex-basis: calc(100% - 35px);
+  }
+
+  .np-group-photo {
+    min-height: 300px;
+  }
+
+  .np-group-list h3 {
+    font-size: 16px;
+  }
+
+  .np-offer-button {
+    max-width: 100%;
+  }
+}
+
+/* EXTRA SMALL SCREENS */
+
+@media (max-width: 380px) {
+  .np-festive-block,
+  .np-special-block,
+  .np-group-block {
+    padding-inline: 12px;
+  }
+
+  .np-deals-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .np-deal {
+    padding: 20px;
+  }
+
+  .np-festive-tile {
+    aspect-ratio: 1 / 1.12;
+  }
+
+  .np-festive-deal-banner > strong {
+    font-size: 27px;
+  }
+
+  .np-group-deal-banner {
+    padding: 15px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .np-offers-design *,
+  .np-offers-design *::before,
+  .np-offers-design *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Festive section: cleaner promotional layout */
+.np-festive-content > p {
+  margin-bottom: 22px;
+}
+
+.np-festive-deal-banner {
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+
+.np-festive-content > .np-offer-button {
+  margin-top: 0;
+}
+
+/* =====================================================
+   NAIL PIGMENT — FESTIVE PROMOTIONAL SECTION
+   Rose Pink: #E75480
+   Blush White: #FFF5F7
+===================================================== */
+
+.np-festive-promo {
+  --fp-pink: #E75480;
+  --fp-blush: #FFF5F7;
+  --fp-text: #35232B;
+  --fp-muted: #75646D;
+  --fp-border: rgba(231, 84, 128, 0.3);
+  --fp-surface: #FFFFFF;
+
+  width: 100%;
+  overflow: clip;
+  background:
+    radial-gradient(
+      ellipse at 12% 100%,
+      rgba(231, 84, 128, 0.11),
+      transparent 55%
+    ),
+    var(--fp-blush);
+  color: var(--fp-text);
+  font-family: "Poppins", sans-serif;
+}
+
+.np-festive-promo *,
+.np-festive-promo *::before,
+.np-festive-promo *::after {
+  box-sizing: border-box;
+}
+
+.np-festive-promo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.np-festive-promo a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.np-festive-promo a:focus-visible {
+  outline: 2px solid var(--fp-pink);
+  outline-offset: 4px;
+}
+
+.np-festive-promo-inner {
+  display: grid;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 620px;
+  grid-template-columns:
+    minmax(0, 0.86fr)
+    minmax(0, 1.14fr);
+  align-items: stretch;
+  gap: clamp(28px, 4vw, 60px);
+  margin-inline: auto;
+  padding: clamp(28px, 3vw, 46px) clamp(22px, 3.2vw, 52px);
+}
+
+/* LEFT CONTENT — MATCHES GALLERY HEIGHT */
+
+.np-promo-copy {
+  display: flex;
+  min-width: 0;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.np-promo-eyebrow {
+  display: block;
+  margin-bottom: 19px;
+  color: var(--fp-pink);
+  
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 1.8;
+}
+
+.np-promo-copy h2 {
+  width: 100%;
+  margin: 0 0 18px;
+  color: var(--fp-text);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 3.6vw, 58px);
+  font-weight: 500;
+  letter-spacing: -1.1px;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.np-promo-copy h2 em {
+  display: block;
+  margin-top: 3px;
+  color: var(--fp-pink);
+  font-weight: 500;
+}
+
+.np-promo-description {
+  max-width: 540px;
+  margin: 0 0 24px;
+  color: var(--fp-muted);
+  font-size: 12px;
+  line-height: 1.95;
+}
+
+/* MAIN DISCOUNT PANEL */
+
+.np-promo-highlight {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 0 23px;
+  padding: clamp(18px, 2.2vw, 28px);
+  overflow: hidden;
+  border: 1px dashed var(--fp-pink);
+  border-radius: 9px;
+  background: rgba(231, 84, 128, 0.055);
+}
+
+.np-promo-highlight-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--fp-muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  line-height: 1.8;
+}
+
+.np-promo-highlight > strong {
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: var(--fp-pink);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 3vw, 47px);
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 1.18;
+}
+
+.np-promo-highlight > p {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0 0;
+  color: var(--fp-muted);
+  
+  line-height: 1.7;
+}
+
+.np-promo-sparkle {
+  position: absolute;
+  color: var(--fp-pink);
+  pointer-events: none;
+}
+
+.np-sparkle-one {
+  top: 37%;
+  right: 14%;
+  font-size: 34px;
+}
+
+.np-sparkle-two {
+  right: 10%;
+  bottom: 20%;
+  font-size: 24px;
+}
+
+/* CTA */
+
+.np-promo-cta {
+  display: inline-flex;
+  min-height: 49px;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  max-width: 100%;
+  padding: 13px 23px;
+  border: 1px solid var(--fp-pink);
+  border-radius: 15px;
+  background: var(--fp-pink);
+  color: #FFFFFF;
+ 
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.np-promo-cta:hover {
+  background: #C83D68;
+  transform: translateY(-2px);
+}
+
+.np-promo-cta > span {
+  font-size: 18px;
+}
+
+.np-promo-bottom-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  color: var(--fp-muted);
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.np-promo-bottom-note > span {
+  color: var(--fp-pink);
+  font-size: 17px;
+}
+
+/* RIGHT IMAGE GRID — SHARES THE SAME SECTION HEIGHT */
+
+.np-promo-gallery {
+  display: grid;
+  min-width: 0;
+  min-height: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* PHOTO CARDS */
+
+.np-promo-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--fp-border);
+  border-radius: 8px;
+  background: #DAB2BF;
+  color: #FFFFFF;
+  isolation: isolate;
+  text-decoration: none;
+}
+
+.np-promo-card > img {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  transition: transform 0.55s ease;
+}
+
+.np-promo-card:hover > img {
+  transform: scale(1.06);
+}
+
+.np-promo-card::after {
+  position: absolute;
+  z-index: -1;
+  inset: 42% 0 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(38, 17, 27, 0.17) 25%,
+    rgba(32, 13, 22, 0.88) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+/* SCALLOPED-LOOK PROMO BADGE */
+
+.np-promo-badge {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  width: clamp(66px, 6.1vw, 91px);
+  aspect-ratio: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 7px;
+  border: 1px solid var(--fp-pink);
+  border-radius: 43% 48% 44% 49% / 47% 43% 50% 46%;
+  background: #FFF9FA;
+  box-shadow: 0 3px 13px rgba(40, 12, 25, 0.15);
+  color: #C83D68;
+  text-align: center;
+  transform: rotate(-4deg);
+}
+
+.np-promo-badge::before {
+  position: absolute;
+  z-index: -1;
+  inset: 4px;
+  border: 1px solid rgba(231, 84, 128, 0.42);
+  border-radius: 46% 43% 48% 44% / 43% 49% 44% 50%;
+  content: "";
+}
+
+.np-promo-badge strong {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(11px, 1.2vw, 17px);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.np-promo-badge small {
+  font-size: clamp(6px, 0.58vw, 8px);
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  line-height: 1.35;
+}
+
+/* Alternate badge positions */
+
+.np-promo-card:nth-child(3) .np-promo-badge,
+.np-promo-card:nth-child(5) .np-promo-badge,
+.np-promo-card:nth-child(6) .np-promo-badge {
+  right: 12px;
+  left: auto;
+  transform: rotate(4deg);
+}
+
+/* IMAGE FOOTER LABEL */
+
+.np-promo-card-footer {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.np-promo-card-footer > strong {
+  flex: 0 1 auto;
+  max-width: 75%;
+  color: #FFFFFF;
+  font-size: clamp(7px, 0.72vw, 10px);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.np-promo-card-footer::before {
+  position: absolute;
+  right: 43px;
+  bottom: 50%;
+  left: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+  content: "";
+  pointer-events: none;
+}
+
+.np-promo-card-footer > strong {
+  position: relative;
+  z-index: 1;
+  padding-right: 4px;
+  background: rgba(45, 22, 32, 0.22);
+}
+
+.np-promo-card-footer > i {
+  display: grid;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  place-items: center;
+  margin-left: auto;
+  border: 1px solid var(--fp-pink);
+  border-radius: 50%;
+  background: #FFF9FA;
+  color: var(--fp-pink);
+  font-size: 19px;
+  font-style: normal;
+  transition: transform 0.25s ease;
+}
+
+.np-promo-card:hover .np-promo-card-footer > i {
+  transform: rotate(45deg);
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+html[data-theme="dark"] .np-festive-promo {
+  --fp-text: #FFF5F7;
+  --fp-muted: #D8C5CD;
+  --fp-border: rgba(231, 84, 128, 0.42);
+  --fp-surface: #211820;
+
+  background:
+    radial-gradient(
+      ellipse at 12% 100%,
+      rgba(231, 84, 128, 0.1),
+      transparent 55%
+    ),
+    #191519;
+}
+
+html[data-theme="dark"] .np-promo-highlight {
+  background: rgba(231, 84, 128, 0.09);
+}
+
+html[data-theme="dark"] .np-promo-pills a {
+  color: var(--fp-text);
+}
+
+html[data-theme="dark"] .np-promo-badge {
+  background: #2B2027;
+  color: #FF9BB7;
+}
+
+html[data-theme="dark"] .np-promo-card-footer > i {
+  background: #2B2027;
+  color: #FF9BB7;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+  .np-festive-promo-inner {
+    min-height: 0;
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(0, 1.1fr);
+    gap: 24px;
+    padding: 30px 24px;
+  }
+
+  .np-promo-copy h2 {
+    font-size: clamp(31px, 3.7vw, 43px);
+  }
+
+  .np-promo-gallery {
+    min-height: 480px;
+    gap: 8px;
+  }
+
+  .np-promo-badge {
+    top: 8px;
+    left: 8px;
+    width: clamp(59px, 7vw, 76px);
+  }
+
+  .np-promo-card:nth-child(3) .np-promo-badge,
+  .np-promo-card:nth-child(5) .np-promo-badge,
+  .np-promo-card:nth-child(6) .np-promo-badge {
+    right: 8px;
+    left: auto;
+  }
+
+  .np-promo-card-footer {
+    right: 7px;
+    bottom: 8px;
+    left: 7px;
+    gap: 5px;
+  }
+
+  .np-promo-card-footer > i {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+  .np-promo-card-footer::before {
+    right: 32px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+  .np-festive-promo-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 30px 18px;
+  }
+
+  .np-promo-copy {
+    min-height: auto;
+    padding: 4px 0;
+  }
+
+  .np-promo-copy h2 {
+    font-size: clamp(34px, 8.5vw, 48px);
+    letter-spacing: -0.7px;
+  }
+
+  .np-promo-description {
+    max-width: 560px;
+    font-size: 12px;
+  }
+
+  .np-promo-highlight {
+    max-width: 100%;
+  }
+
+  .np-promo-highlight > strong {
+    font-size: clamp(30px, 7.5vw, 42px);
+  }
+
+  .np-promo-gallery {
+    min-height: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .np-promo-card {
+    aspect-ratio: 0.86 / 1;
+    min-height: 220px;
+  }
+
+  .np-promo-card:last-child {
+    grid-column: 1 / -1;
+    aspect-ratio: 1.7 / 1;
+  }
+
+  .np-promo-badge {
+    width: clamp(68px, 19vw, 86px);
+    top: 10px;
+    left: 10px;
+  }
+
+  .np-promo-card:nth-child(3) .np-promo-badge,
+  .np-promo-card:nth-child(5) .np-promo-badge,
+  .np-promo-card:nth-child(6) .np-promo-badge {
+    right: 10px;
+    left: auto;
+  }
+
+  .np-promo-badge strong {
+    font-size: 13px;
+  }
+
+  .np-promo-badge small {
+    font-size: 7px;
+  }
+
+  .np-promo-card-footer > strong {
+    font-size: 8px;
+  }
+
+  .np-promo-card-footer > i {
+    width: 29px;
+    min-width: 29px;
+    height: 29px;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+  .np-festive-promo-inner {
+    padding: 25px 13px;
+  }
+
+  .np-promo-copy h2 {
+    font-size: 32px;
+  }
+
+  .np-promo-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+
+  .np-promo-card {
+    min-height: 190px;
+  }
+
+  .np-promo-badge {
+    width: 62px;
+    padding: 5px;
+  }
+
+  
+
+  .np-promo-card-footer > strong {
+    font-size: 7px;
+  }
+
+  .np-promo-card-footer > i {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+
+  .np-promo-cta {
+    width: 100%;
+  }
+}
+
+/* RTL */
+
+html[dir="rtl"] .np-festive-promo {
+  direction: rtl;
+}
+
+html[dir="rtl"] .np-promo-badge {
+  right: 12px;
+  left: auto;
+}
+
+html[dir="rtl"] .np-promo-card:nth-child(3) .np-promo-badge,
+html[dir="rtl"] .np-promo-card:nth-child(5) .np-promo-badge,
+html[dir="rtl"] .np-promo-card:nth-child(6) .np-promo-badge {
+  right: auto;
+  left: 12px;
+}
+
+html[dir="rtl"] .np-promo-card-footer > i {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .np-promo-sparkle {
+  right: auto;
+  left: 14%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .np-festive-promo *,
+  .np-festive-promo *::before,
+  .np-festive-promo *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* FIX: Prevent the decorative line from crossing the text */
+
+.np-promo-card-footer {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.np-promo-card-footer::before {
+  content: none !important;
+}
+
+.np-promo-card-footer > strong {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  padding: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: clamp(7px, 0.72vw, 10px);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.np-promo-card-footer > i {
+  display: grid;
+  flex-shrink: 0;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  place-items: center;
+  margin-left: auto;
+  border: 1px solid #E75480;
+  border-radius: 50%;
+  background: #FFF9FA;
+  color: #E75480;
+  font-size: 19px;
+  font-style: normal;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.np-promo-card:hover .np-promo-card-footer > i {
+  transform: rotate(45deg);
+}
+
+/* Mobile alignment */
+@media (max-width: 700px) {
+  .np-promo-card-footer {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    gap: 6px;
+  }
+
+  .np-promo-card-footer > i {
+    width: 27px;
+    min-width: 27px;
+    height: 27px;
+    font-size: 15px;
+  }
+}
+
+/* =========================================
+   NAIL PIGMENT — FINAL CTA BUTTON
+   Normal: Rose Pink
+   Hover:  Berry Pink
+========================================= */
+
+body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+  background-color: #E75480 !important;
+  border: 1px solid #E75480 !important;
+  color: #FFFFFF !important;
+
+  box-shadow: 0 8px 22px rgba(158, 35, 78, 0.18);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Keep the button text and any arrow white */
+body[data-page="offers"] .offers-final-cta .offers-btn-primary,
+body[data-page="offers"] .offers-final-cta .offers-btn-primary span {
+  color: #FFFFFF !important;
+}
+
+/* Berry Pink hover */
+body[data-page="offers"] .offers-final-cta .offers-btn-primary:hover {
+  background-color: #9E234E !important;
+  border-color: #9E234E !important;
+  color: #FFFFFF !important;
+
+  box-shadow: 0 10px 26px rgba(158, 35, 78, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Keep arrow white on hover */
+body[data-page="offers"] .offers-final-cta .offers-btn-primary:hover span {
+  color: #FFFFFF !important;
+}
+
+/* Keyboard focus */
+body[data-page="offers"] .offers-final-cta .offers-btn-primary:focus-visible {
+  outline: 2px solid #E75480;
+  outline-offset: 4px;
+}
+
+/* Mobile: preserve existing button alignment */
+@media (max-width: 760px) {
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    align-self: flex-start;
+    margin: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  body[data-page="offers"] .offers-final-cta .offers-btn-primary {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+/* ==========================================
+   OFFERS HERO — FIX EYEBROW BADGE
+========================================== */
+
+html body[data-page="offers"] .offers-hero-content > .offers-eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 12px 18px !important;
+    margin: 0 0 22px !important;
+
+    background: #FFF8FA !important;
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+   
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.4 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+}
+
+/* Remove any line crossing the badge text */
+html body[data-page="offers"] .offers-hero-content > .offers-eyebrow::before,
+html body[data-page="offers"] .offers-hero-content > .offers-eyebrow::after {
+    content: "" !important;
+    position: static !important;
+    display: block !important;
+    width: 27px !important;
+    height: 1px !important;
+    flex: 0 0 27px !important;
+    background: #F05A86 !important;
+    transform: none !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] .offers-hero-content > .offers-eyebrow {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-hero-content > .offers-eyebrow::before,
+html[data-theme="dark"] body[data-page="offers"] .offers-hero-content > .offers-eyebrow::after {
+    background: #F5A5BD !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html body[data-page="offers"] .offers-hero-content > .offers-eyebrow {
+        gap: 8px !important;
+        padding: 10px 12px !important;
+        font-size: 9px !important;
+        letter-spacing: 1.4px !important;
+    }
+
+    html body[data-page="offers"] .offers-hero-content > .offers-eyebrow::before,
+    html body[data-page="offers"] .offers-hero-content > .offers-eyebrow::after {
+        width: 18px !important;
+        flex-basis: 18px !important;
+    }
+}/* Reduce the gap between Offers hero text and image */
+html body[data-page="offers"] .offers-hero {
+    column-gap: 32px !important;
+}
+
+html body[data-page="offers"] .offers-hero-content {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+html body[data-page="offers"] .offers-hero-art {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    justify-self: start !important;
+    transform: translateX(-25px);
+}
+
+/* Responsive: avoid pushing the image outside the screen */
+@media (max-width: 900px) {
+    html body[data-page="offers"] .offers-hero {
+        column-gap: 24px !important;
+    }
+
+    html body[data-page="offers"] .offers-hero-art {
+        transform: none !important;
+    }
+}
+
+@media (max-width: 760px) {
+    html body[data-page="offers"] .offers-hero {
+        column-gap: 0 !important;
+        row-gap: 30px !important;
+    }
+}/* FIX: CURATED FOR YOU BADGE */
+html body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: fit-content !important;
+    padding: 10px 16px !important;
+    margin: 0 0 18px !important;
+
+    position: relative !important;
+    overflow: visible !important;
+
+    background: #FFF8FA !important;
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+   
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+}
+
+/* Remove unwanted lines crossing the text */
+html body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow::before,
+html body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow::after {
+    content: "" !important;
+    position: static !important;
+    display: block !important;
+    width: 22px !important;
+    height: 1px !important;
+    flex: 0 0 22px !important;
+    background: #F05A86 !important;
+    transform: none !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow::before,
+html[data-theme="dark"] body[data-page="offers"] #packages .offers-section-heading > .offers-eyebrow::after {
+    background: #F5A5BD !important;
+}/* FIX: LITTLE TREATS, BIG JOY BADGE */
+html body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 16px !important;
+    margin: 0 0 18px !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    background: #FFF8FA !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+   
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.4 !important;
+    text-transform: uppercase !important;
+
+    text-decoration: none !important;
+    text-align: center !important;
+    position: relative !important;
+}
+
+/* Remove old line styles and create clean side lines */
+html body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow::before,
+html body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow::after {
+    content: "" !important;
+    position: static !important;
+    display: block !important;
+
+    width: 22px !important;
+    min-width: 22px !important;
+    height: 1px !important;
+    flex: 0 0 22px !important;
+
+    background: #F05A86 !important;
+    transform: none !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow::before,
+html[data-theme="dark"] body[data-page="offers"] #special-offers
+.offers-section-heading > .offers-eyebrow::after {
+    background: #F5A5BD !important;
+}/* ==========================================
+   FESTIVE SPECIALS — PILL BADGE
+========================================== */
+
+html body[data-page="offers"] #festive-looks .np-promo-eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 16px !important;
+    margin: 0 0 20px !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    background: #FFF8FA !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+   
+    font-weight: 600 !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+/* Decorative lines on both sides */
+html body[data-page="offers"] #festive-looks .np-promo-eyebrow::before,
+html body[data-page="offers"] #festive-looks .np-promo-eyebrow::after {
+    content: "" !important;
+    display: block !important;
+    position: static !important;
+
+    width: 22px !important;
+    min-width: 22px !important;
+    height: 1px !important;
+    flex: 0 0 22px !important;
+
+    background: #F05A86 !important;
+    transform: none !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] #festive-looks .np-promo-eyebrow {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] #festive-looks .np-promo-eyebrow::before,
+html[data-theme="dark"] body[data-page="offers"] #festive-looks .np-promo-eyebrow::after {
+    background: #F5A5BD !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html body[data-page="offers"] #festive-looks .np-promo-eyebrow {
+        gap: 7px !important;
+        padding: 9px 11px !important;
+        font-size: 9px !important;
+        letter-spacing: 1.2px !important;
+    }
+
+    html body[data-page="offers"] #festive-looks .np-promo-eyebrow::before,
+    html body[data-page="offers"] #festive-looks .np-promo-eyebrow::after {
+        width: 15px !important;
+        min-width: 15px !important;
+        flex-basis: 15px !important;
+    }
+}/* ============================================
+   SPECIAL OFFERS — CORRECT BADGE + HEADING SIZE
+============================================ */
+
+/* Badge: SPECIAL OFFERS & LIMITED-TIME DEALS */
+html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 18px !important;
+    margin: 0 auto 18px !important;
+
+    border: 1px solid #FFB1C6 !important;
+    border-radius: 50px !important;
+    background: #FFF8FA !important;
+
+    color: #C83D6B !important;
+    font-family: 'Poppins', sans-serif !important;
+  
+    font-weight: 600 !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+}
+
+/* One decorative line on each side */
+html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::before,
+html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::after {
+    content: "" !important;
+    display: block !important;
+    position: static !important;
+    width: 24px !important;
+    min-width: 24px !important;
+    height: 1px !important;
+    flex: 0 0 24px !important;
+    background: #F05A86 !important;
+    transform: none !important;
+}
+
+/* Larger heading */
+html body[data-page="offers"] .np-special-block .np-section-heading h2 {
+    font-size: clamp(38px, 4vw, 56px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 14px !important;
+}
+
+/* Keep the description readable */
+html body[data-page="offers"] .np-special-block .np-section-heading > p {
+    max-width: 650px !important;
+    margin: 0 auto !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] .np-special-block .np-section-heading > .np-overline {
+    background: #241820 !important;
+    border-color: #C83D6B !important;
+    color: #F5A5BD !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::before,
+html[data-theme="dark"] body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::after {
+    background: #F5A5BD !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline {
+        gap: 7px !important;
+        padding: 9px 11px !important;
+        font-size: 9px !important;
+        letter-spacing: 1.2px !important;
+    }
+
+    html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::before,
+    html body[data-page="offers"] .np-special-block .np-section-heading > .np-overline::after {
+        width: 15px !important;
+        min-width: 15px !important;
+        flex-basis: 15px !important;
+    }
+
+    html body[data-page="offers"] .np-special-block .np-section-heading h2 {
+        font-size: clamp(32px, 8vw, 42px) !important;
+    }
+}/* Group Deals button — Berry Pink Hover */
+body[data-page="offers"] #group-collaborations .np-offer-button {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease !important;
+}
+
+body[data-page="offers"] #group-collaborations .np-offer-button:hover {
+    background-color: #C83D6B !important;
+    border-color: #C83D6B !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}/* OFFERS FINAL CTA — WHITE BUTTON */
+body[data-page="offers"] .offers-final-cta a.offers-cta-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #C83D6B !important;
+    border: 2px solid #FFFFFF !important;
+
+    min-height: 54px !important;
+    padding: 16px 32px !important;
+    border-radius: 12px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-decoration: none !important;
+
+    box-shadow: 0 8px 24px rgba(80, 20, 45, 0.18) !important;
+    transform: none !important;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                color 0.3s ease !important;
+}
+
+/* HOVER — KEEP THE BUTTON WHITE */
+body[data-page="offers"] .offers-final-cta a.offers-cta-button:hover,
+body[data-page="offers"] .offers-final-cta a.offers-cta-button:focus-visible {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #C83D6B !important;
+    border-color: #C83D6B !important;
+
+    box-shadow: 0 8px 24px rgba(200, 61, 107, 0.30) !important;
+    transform: none !important;
+}/* GROUP DEALS — CENTER HEADING + PREMIUM BADGE */
+body[data-page="offers"] #group-collaborations .np-group-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+body[data-page="offers"] #group-collaborations .np-overline {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 9px 18px !important;
+    margin: 0 auto 22px !important;
+
+    color: #E75480 !important;
+    background: rgba(231, 84, 128, 0.10) !important;
+    border: 1px solid rgba(231, 84, 128, 0.45) !important;
+    border-radius: 50px !important;
+
+    
+    font-weight: 600 !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.5 !important;
+}
+
+body[data-page="offers"] #group-collaborations .np-group-content > h2 {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto 20px !important;
+}
+
+body[data-page="offers"] #group-collaborations .np-group-content > p {
+    max-width: 620px !important;
+    width: 100% !important;
+    margin: 0 auto 24px !important;
+    text-align: center !important;
+}
+
+/* Keep the heading and badge centered responsively */
+@media (max-width: 768px) {
+    body[data-page="offers"] #group-collaborations .np-group-content {
+        padding-inline: 16px !important;
+    }
+
+    body[data-page="offers"] #group-collaborations .np-group-content > h2 {
+        font-size: clamp(30px, 7vw, 42px) !important;
+    }
+}
+/* =========================================
+   OFFERS CTA — FORCE ROSE PINK / BERRY HOVER
+========================================= */
+
+/* Default button: Rose Pink */
+body[data-page="offers"] .offers-final-cta a.offers-cta-button,
+body[data-page="offers"] .offers-final-cta a.offers-cta-button:link,
+body[data-page="offers"] .offers-final-cta a.offers-cta-button:visited,
+body[data-page="offers"] .offers-final-cta button.offers-cta-button {
+  background: #E75480 !important;
+  background-color: #E75480 !important;
+  background-image: none !important;
+  border: 1px solid #E75480 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  opacity: 1 !important;
+  filter: none !important;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease !important;
+}
+
+/* Hover: the WHOLE button becomes Berry Pink */
+body[data-page="offers"] .offers-final-cta a.offers-cta-button:hover,
+body[data-page="offers"] .offers-final-cta button.offers-cta-button:hover {
+  background: #C2185B !important;
+  background-color: #C2185B !important;
+  background-image: none !important;
+  border-color: #C2185B !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 10px 25px rgba(194, 24, 91, 0.32) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Keep every child, including icons, white on hover */
+body[data-page="offers"] .offers-final-cta .offers-cta-button:hover *,
+body[data-page="offers"] .offers-final-cta .offers-cta-button:active * {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Keyboard focus */
+body[data-page="offers"] .offers-final-cta .offers-cta-button:focus-visible {
+  outline: 3px solid #C2185B !important;
+  outline-offset: 4px !important;
+}
+
+/* Dark mode: preserve the same button colors */
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta .offers-cta-button,
+html.dark-mode body[data-page="offers"] .offers-final-cta .offers-cta-button,
+body.dark-mode[data-page="offers"] .offers-final-cta .offers-cta-button {
+  background: #E75480 !important;
+  background-color: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta .offers-cta-button:hover,
+html.dark-mode body[data-page="offers"] .offers-final-cta .offers-cta-button:hover,
+body.dark-mode[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+  background: #C2185B !important;
+  background-color: #C2185B !important;
+  border-color: #C2185B !important;
+  color: #FFFFFF !important;
+}
+
+/* ==========================================
+   NAIL PIGMENT — OFFERS CTA REDESIGN
+   Light blush panel | Rose button | Berry hover
+========================================== */
+
+body[data-page="offers"] .offers-final-cta {
+  padding: 38px clamp(18px, 3vw, 48px) !important;
+  background: #FFF5F7 !important;
+  box-sizing: border-box !important;
+}
+
+body[data-page="offers"] .offers-final-cta-inner {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 130px minmax(230px, 270px) !important;
+  grid-template-areas:
+    "eyebrow artwork button"
+    "heading artwork button"
+    "description artwork button" !important;
+  align-items: center !important;
+  gap: 16px 30px !important;
+
+  width: 100% !important;
+  max-width: 1480px !important;
+  min-width: 0 !important;
+  min-height: 270px !important;
+  margin: 0 auto !important;
+  padding: 40px clamp(24px, 4vw, 60px) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+
+  background: linear-gradient(120deg, #FFFFFF 0%, #FFF8FA 72%, #FCE8EF 100%) !important;
+  border: 1px solid #F4B0C7 !important;
+  border-radius: 28px 5px 28px 5px !important;
+  box-shadow: 0 16px 38px rgba(91, 31, 55, .06) !important;
+}
+
+/* Label */
+body[data-page="offers"] .offers-final-cta-inner .offers-eyebrow {
+  grid-area: eyebrow !important;
+  justify-self: start !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 9px 16px !important;
+  background: #FFF5F7 !important;
+  border: 1px solid #F4B0C7 !important;
+  border-radius: 30px !important;
+  color: #C2185B !important;
+  -webkit-text-fill-color: #C2185B !important;
+  font: 700 10px/1.5 "Poppins", sans-serif !important;
+  letter-spacing: 1.2px !important;
+}
+
+/* Heading */
+body[data-page="offers"] .offers-final-cta-inner h2 {
+  grid-area: heading !important;
+  width: 100% !important;
+  max-width: 850px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  color: #351C2A !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: clamp(34px, 3.4vw, 54px) !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  overflow-wrap: break-word !important;
+}
+
+body[data-page="offers"] .offers-final-cta-inner h2 span,
+body[data-page="offers"] .offers-final-cta-inner h2 em,
+body[data-page="offers"] .offers-final-cta-inner h2 strong {
+  color: #E75480 !important;
+  -webkit-text-fill-color: #E75480 !important;
+}
+
+/* Description */
+body[data-page="offers"] .offers-final-cta-inner > p {
+  grid-area: description !important;
+  align-self: start !important;
+  max-width: 720px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  color: #765D6A !important;
+  font: 400 14px/1.8 "Poppins", sans-serif !important;
+}
+
+/* Decorative star */
+body[data-page="offers"] .offers-final-cta-inner::before {
+  content: "✧" !important;
+  grid-area: artwork !important;
+  position: relative !important;
+  inset: auto !important;
+  justify-self: center !important;
+  align-self: center !important;
+  width: 110px !important;
+  height: 110px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  border: 1px solid #F4B0C7 !important;
+  border-radius: 50% !important;
+  background: #FCE8EF !important;
+  color: #E75480 !important;
+  font: 400 76px/1 Georgia, serif !important;
+  pointer-events: none !important;
+}
+
+/* Button — Rose Pink */
+body[data-page="offers"] .offers-final-cta .offers-cta-button,
+body[data-page="offers"] .offers-final-cta .offers-cta-button:visited {
+  grid-area: button !important;
+  justify-self: end !important;
+  align-self: center !important;
+  position: relative !important;
+  z-index: 2 !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 270px !important;
+  min-height: 54px !important;
+  margin: 0 !important;
+  padding: 14px 18px !important;
+  box-sizing: border-box !important;
+
+  background: #E75480 !important;
+  background-color: #E75480 !important;
+  background-image: none !important;
+  border: 1px solid #E75480 !important;
+  border-radius: 12px !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font: 700 13px/1.5 "Poppins", sans-serif !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  box-shadow: 0 8px 20px rgba(231, 84, 128, .22) !important;
+  transition: background-color .22s ease,
+              border-color .22s ease,
+              box-shadow .22s ease,
+              transform .22s ease !important;
+}
+
+/* Full button becomes Berry Pink on hover */
+body[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+  background: #C2185B !important;
+  background-color: #C2185B !important;
+  background-image: none !important;
+  border-color: #C2185B !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 10px 24px rgba(194, 24, 91, .30) !important;
+  transform: translateY(-2px) !important;
+}
+
+body[data-page="offers"] .offers-final-cta .offers-cta-button:hover * {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body[data-page="offers"] .offers-final-cta-inner {
+    grid-template-columns: minmax(0, 1fr) 90px !important;
+    grid-template-areas:
+      "eyebrow artwork"
+      "heading artwork"
+      "description description"
+      "button button" !important;
+    min-height: 0 !important;
+    gap: 17px 22px !important;
+    padding: 30px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    justify-self: start !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner::before {
+    width: 82px !important;
+    height: 82px !important;
+    font-size: 58px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body[data-page="offers"] .offers-final-cta {
+    padding: 20px 14px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas:
+      "eyebrow"
+      "heading"
+      "description"
+      "artwork"
+      "button" !important;
+    min-height: 0 !important;
+    gap: 16px !important;
+    padding: 24px 20px !important;
+    border-radius: 22px 5px 22px 5px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner h2 {
+    font-size: clamp(29px, 8vw, 38px) !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner > p {
+    font-size: 12px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner::before {
+    width: 76px !important;
+    height: 76px !important;
+    font-size: 50px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    justify-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* RTL */
+html[dir="rtl"] body[data-page="offers"] .offers-final-cta-inner {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+html[dir="rtl"] body[data-page="offers"] .offers-final-cta .offers-cta-button {
+  justify-self: start !important;
+}
+
+@media (max-width: 767px) {
+  html[dir="rtl"] body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    justify-self: stretch !important;
+  }
+}
+
+/* Dark mode */
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner,
+html.dark-mode body[data-page="offers"] .offers-final-cta-inner,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner {
+  background: linear-gradient(120deg, #291923, #38202D) !important;
+  border-color: #603047 !important;
+}
+
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner h2,
+html.dark-mode body[data-page="offers"] .offers-final-cta-inner h2,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner h2 {
+  color: #FFF5F7 !important;
+}
+/* ==========================================
+   OFFERS CTA — WIDER INNER BOX
+   Keep the button completely INSIDE the box
+========================================== */
+
+@media (min-width: 1024px) {
+  body[data-page="offers"] .offers-final-cta-inner {
+    display: grid !important;
+    grid-template-columns:
+      minmax(0, 1fr)
+      100px
+      minmax(250px, 280px) !important;
+
+    grid-template-areas:
+      "eyebrow artwork button"
+      "heading artwork button"
+      "description artwork button" !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+
+    /* Increase the inner box width and usable space */
+    padding: 42px clamp(30px, 4vw, 64px) !important;
+    min-height: 340px !important;
+
+    gap: 16px 32px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* Keep the heading from pushing into the button */
+  body[data-page="offers"] .offers-final-cta-inner h2 {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    font-size: clamp(34px, 3vw, 48px) !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Keep the decorative star in its own column */
+  body[data-page="offers"] .offers-final-cta-inner::before {
+    grid-area: artwork !important;
+    justify-self: center !important;
+    align-self: center !important;
+  }
+
+  /* Keep the entire button inside the inner box */
+  body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    grid-area: button !important;
+    justify-self: stretch !important;
+    align-self: center !important;
+
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: 0 !important;
+    min-height: 54px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    background: #E75480 !important;
+    border: 1px solid #E75480 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+    background: #C2185B !important;
+    border-color: #C2185B !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+  }
+}
+
+/* Very wide desktop screens */
+@media (min-width: 1600px) {
+  body[data-page="offers"] .offers-final-cta-inner {
+    min-height: 360px !important;
+    padding-inline: 72px !important;
+  }
+}/* ==========================================
+   NAIL PIGMENT — OFFERS CTA DARK MODE REDESIGN
+   Soft plum panel | Clear text | Rose-pink button
+========================================== */
+
+@media (min-width: 1024px) {
+  body[data-page="offers"] .offers-final-cta {
+    padding: 32px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 90px 270px !important;
+    align-items: center !important;
+    column-gap: 28px !important;
+    row-gap: 18px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 340px !important;
+    margin: 0 !important;
+    padding: 42px 48px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    background: #38202E !important;
+    border: 1px solid #754055 !important;
+    border-radius: 28px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16) !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner h2 {
+    grid-column: 1 !important;
+    color: #FFF5F7 !important;
+    line-height: 1.15 !important;
+    max-width: 100% !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner p {
+    grid-column: 1 !important;
+    color: #F0DDE5 !important;
+    line-height: 1.8 !important;
+    max-width: 620px !important;
+  }
+
+  /* Decorative star */
+  body[data-page="offers"] .offers-final-cta-inner::before {
+    grid-column: 2 !important;
+    align-self: center !important;
+    justify-self: center !important;
+    color: #F08BAA !important;
+  }
+
+  /* Button stays inside the panel */
+  body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    grid-column: 3 !important;
+    grid-row: 1 / span 3 !important;
+    justify-self: stretch !important;
+    align-self: center !important;
+
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 270px !important;
+    min-width: 0 !important;
+    min-height: 56px !important;
+    margin: 0 !important;
+    padding: 16px 20px !important;
+    box-sizing: border-box !important;
+
+    background: #E75480 !important;
+    border: 1px solid #E75480 !important;
+    border-radius: 13px !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    box-shadow: 0 8px 22px rgba(231, 84, 128, 0.2) !important;
+    transition: background 0.25s ease, border-color 0.25s ease,
+                box-shadow 0.25s ease, transform 0.25s ease !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+    background: #C2185B !important;
+    border-color: #C2185B !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    box-shadow: 0 12px 28px rgba(194, 24, 91, 0.3) !important;
+    transform: translateY(-2px) !important;
+  }
+}
+
+/* Tablet and mobile: prevent overflow */
+@media (max-width: 1023px) {
+  body[data-page="offers"] .offers-final-cta {
+    padding: 18px !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 28px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    min-height: 54px !important;
+    box-sizing: border-box !important;
+    background: #E75480 !important;
+    border: 1px solid #E75480 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+    background: #C2185B !important;
+    border-color: #C2185B !important;
+  }
+}/* ==========================================
+   NAIL PIGMENT — DARK MODE CTA COLOUR THEME
+   Reference: Berry / Plum / Muted Purple
+========================================== */
+
+@media (min-width: 1024px) {
+  body[data-page="offers"] .offers-final-cta {
+    background: linear-gradient(
+      115deg,
+      #70264C 0%,
+      #B83D72 48%,
+      #81458D 100%
+    ) !important;
+
+    border: 1px solid #A75A85 !important;
+    border-radius: 30px !important;
+    padding: 32px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-page="offers"] .offers-final-cta-inner {
+    background: linear-gradient(
+      120deg,
+      #28151F 0%,
+      #321B29 55%,
+      #28151F 100%
+    ) !important;
+
+    border: 1px solid #573044 !important;
+    border-radius: 26px !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Dark mode heading */
+html.dark body[data-page="offers"] .offers-final-cta-inner h2,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner h2,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner h2 {
+  color: #FFF5F7 !important;
+}
+
+/* Highlighted heading text */
+html.dark body[data-page="offers"] .offers-final-cta-inner h2 span,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner h2 span,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner h2 span {
+  color: #E75480 !important;
+}
+
+/* Supporting paragraph */
+html.dark body[data-page="offers"] .offers-final-cta-inner p,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner p,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner p {
+  color: #E7CFDA !important;
+}
+
+/* Eyebrow / label */
+html.dark body[data-page="offers"] .offers-final-cta-inner .eyebrow,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner .eyebrow,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner .eyebrow {
+  color: #F4B5CC !important;
+  border-color: #92506C !important;
+}
+
+/* Decorative shapes */
+html.dark body[data-page="offers"] .offers-final-cta-inner::before,
+body.dark-mode[data-page="offers"] .offers-final-cta-inner::before,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta-inner::before {
+  color: #8C354F !important;
+  border-color: #8C354F !important;
+  background: transparent !important;
+}
+
+/* Button — Rose Pink */
+body[data-page="offers"] .offers-final-cta .offers-cta-button {
+  background: #E75480 !important;
+  border: 1px solid #E75480 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  border-radius: 13px !important;
+  box-shadow: 0 8px 24px rgba(231, 84, 128, 0.2) !important;
+  transition: background 0.25s ease, border-color 0.25s ease,
+              transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+/* Button hover — Berry Pink */
+body[data-page="offers"] .offers-final-cta .offers-cta-button:hover {
+  background: #C2185B !important;
+  border-color: #C2185B !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 28px rgba(194, 24, 91, 0.32) !important;
+}/* OFFERS CTA — DARK MODE TAG FIX */
+
+html.dark body[data-page="offers"] .offers-final-cta .offers-eyebrow,
+body.dark-mode[data-page="offers"] .offers-final-cta .offers-eyebrow,
+html[data-theme="dark"] body[data-page="offers"] .offers-final-cta .offers-eyebrow,
+body[data-page="offers"] .offers-final-cta .offers-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-height: 44px !important;
+  padding: 10px 22px !important;
+  margin: 0 0 18px !important;
+  box-sizing: border-box !important;
+
+  background: #261923 !important;
+  border: 1px solid #E75480 !important;
+  border-radius: 999px !important;
+
+  color: #FF8EAF !important;
+  -webkit-text-fill-color: #FF8EAF !important;
+
+ 
+  font-weight: 700 !important;
+  letter-spacing: 1.8px !important;
+  line-height: 1.4 !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+body[data-page="offers"] .offers-final-cta .offers-eyebrow::before,
+body[data-page="offers"] .offers-final-cta .offers-eyebrow::after {
+  content: "" !important;
+  display: block !important;
+  flex: 0 0 26px !important;
+  width: 26px !important;
+  height: 1px !important;
+  background: #E75480 !important;
+  opacity: 1 !important;
+}
+
+/* ==========================================
+   NAIL PIGMENT — GROUP SECTION TAG
+   Horizontal lines in dark mode
+========================================== */
+
+.np-group-content > .np-overline {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+  width: fit-content !important;
+  max-width: 100%;
+  line-height: 1.5 !important;
+  white-space: normal;
+  text-align: center;
+}
+
+.np-group-content > .np-overline::before,
+.np-group-content > .np-overline::after {
+  content: "" !important;
+  display: block !important;
+  flex: 0 0 28px !important;
+  width: 28px !important;
+  height: 1px !important;
+  background-color: #E75480 !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode */
+html.dark .np-group-content > .np-overline,
+body.dark .np-group-content > .np-overline,
+[data-theme="dark"] .np-group-content > .np-overline {
+  color: #FF4F87 !important;
+}
+
+html.dark .np-group-content > .np-overline::before,
+html.dark .np-group-content > .np-overline::after,
+body.dark .np-group-content > .np-overline::before,
+body.dark .np-group-content > .np-overline::after,
+[data-theme="dark"] .np-group-content > .np-overline::before,
+[data-theme="dark"] .np-group-content > .np-overline::after {
+  background-color: #FF4F87 !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .np-group-content > .np-overline {
+    gap: 8px !important;
+   
+  }
+
+  .np-group-content > .np-overline::before,
+  .np-group-content > .np-overline::after {
+    flex-basis: 16px !important;
+    width: 16px !important;
+  }
+}
+/* ==========================================
+   NAIL PIGMENT — GROUP IMAGE FIT
+========================================== */
+
+.np-group-block .np-group-grid {
+  width: 100% !important;
+  max-width: 1600px !important;
+  margin-inline: auto !important;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
+  gap: clamp(28px, 4vw, 64px) !important;
+  align-items: stretch !important;
+}
+
+.np-group-block .np-group-photo {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: clamp(460px, 38vw, 680px) !important;
+  min-height: 460px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.np-group-block .np-group-photo img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+/* Large desktop */
+@media (min-width: 1600px) {
+  .np-group-block .np-group-grid {
+    max-width: 1720px !important;
+    gap: 70px !important;
+  }
+
+  .np-group-block .np-group-photo {
+    height: 680px !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .np-group-block .np-group-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 28px !important;
+  }
+
+  .np-group-block .np-group-photo {
+    height: 500px !important;
+    min-height: 400px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .np-group-block .np-group-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 30px !important;
+  }
+
+  .np-group-block .np-group-photo {
+    width: 100% !important;
+    height: clamp(320px, 95vw, 460px) !important;
+    min-height: 320px !important;
+  }
+}
+/* ==========================================
+   OFFERS CTA — LIGHT MODE BACKGROUND FIX
+   Rose Pink: #E75480
+   Berry Pink: #9E234E
+========================================== */
+
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta {
+  background: linear-gradient(
+    135deg,
+    #FFF5F7 0%,
+    #FCE8EF 55%,
+    #F8DCE7 100%
+  ) !important;
+
+  border: 1px solid rgba(231, 84, 128, 0.35) !important;
+  box-shadow: 0 18px 45px rgba(158, 35, 78, 0.08) !important;
+}
+
+/* Inner box — remove the dark background */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-final-cta-inner {
+  background: linear-gradient(
+    135deg,
+    #FFFFFF 0%,
+    #FFF7FA 65%,
+    #FDEBF2 100%
+  ) !important;
+
+  border: 1px solid rgba(231, 84, 128, 0.35) !important;
+  box-shadow: 0 12px 30px rgba(158, 35, 78, 0.06) !important;
+}
+
+/* Heading */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta h2 {
+  color: #351D2A !important;
+}
+
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta h2 span {
+  color: #E75480 !important;
+}
+
+/* Description */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta-inner > p {
+  color: #684454 !important;
+}
+
+/* Tag */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-eyebrow {
+  background: #FFF5F7 !important;
+  border: 1px solid #E75480 !important;
+  color: #9E234E !important;
+}
+
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-eyebrow::before,
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-eyebrow::after {
+  background: #9E234E !important;
+}
+
+/* Decorative sparkle */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta::after {
+  color: rgba(158, 35, 78, 0.12) !important;
+}
+
+/* Button — rose pink */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-btn-primary {
+  background: #E75480 !important;
+  border: 1px solid #E75480 !important;
+  color: #FFFFFF !important;
+}
+
+/* Hover — full berry pink */
+html:not([data-theme="dark"]) body[data-page="offers"]
+.offers-final-cta .offers-btn-primary:hover {
+  background: #9E234E !important;
+  border-color: #9E234E !important;
+  color: #FFFFFF !important;
+}
