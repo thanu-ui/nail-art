@@ -2505,3 +2505,99 @@ html[dir="rtl"] #site-footer .footer-logo {
     justify-self: start !important;
   }
 }
+
+/* ==========================================
+   NAIL PIGMENT — RESPONSIVE FOOTER FIX
+   Uses the actual project selectors
+========================================== */
+
+/* Desktop: keep all six footer columns together */
+@media (min-width: 1201px) {
+  .site-footer .footer-top {
+    display: grid !important;
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(0, 0.8fr)
+      minmax(0, 0.9fr)
+      minmax(0, 1fr)
+      minmax(0, 1.1fr)
+      minmax(0, 1.15fr) !important;
+    gap: 24px !important;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .site-footer .footer-top > * {
+    min-width: 0 !important;
+    max-width: 100%;
+  }
+
+  .site-footer .newsletter {
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .site-footer .newsletter-form {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Tablet: two columns */
+@media (min-width: 651px) and (max-width: 1200px) {
+  .site-footer .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 30px !important;
+  }
+
+  .site-footer .footer-top > * {
+    min-width: 0 !important;
+    max-width: 100%;
+  }
+
+  .site-footer .newsletter {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+/* Mobile: single-column footer */
+@media (max-width: 650px) {
+  .site-footer {
+    padding: 36px 18px 20px !important;
+  }
+
+  .site-footer .footer-top {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 28px !important;
+  }
+
+  .site-footer .footer-top > *,
+  .site-footer .newsletter {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  .site-footer .footer-brand p {
+    max-width: 100%;
+  }
+
+  .site-footer .newsletter-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .site-footer .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
